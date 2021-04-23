@@ -14,6 +14,41 @@
 
 <body>
 
+    <nav class="#000000 black nav-text">
+        <!-- top navbar -->
+        <div class="nav-wrapper">
+            <a href="{{ url_for('get_destination') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" class="brand-logo"> </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="{{ url_for('get_destination') }}">Our travels</a></li>
+                <li><a href="#">My reviews</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Log out</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- mobile side navbar -->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="{{ url_for('get_destination') }}">Our travels</a></li>
+        <li><a href="#">My reviews</a></li>
+        <li><a href="#">Log in</a></li>
+        <li><a href="#">Log out</a></li>
+        <li><a href="#">Sign Up</a></li>
+    </ul>
+
+
+    <!-- video -->
+    <div class="video-container">
+        <object width="560" height="315">
+            <param name="movie" value=//www.youtube.com/embed/MyqhDKNig88?rel=0">
+            </param>
+            <embed src="//www.youtube.com/embed/MyqhDKNig88?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true"></embed>
+        </object>
+    </div>
+    <br>
+
     {% block content %}
     {% endblock %}
 
@@ -21,6 +56,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
     {% block scripts %}
     {% endblock %}
 </body>

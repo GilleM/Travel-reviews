@@ -1,3 +1,60 @@
-body {
-    background-color: red;
+.brand-logo {
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+nav {
+    height: 200px;
+}
+
+.nav-text {
+    font-size: 30px;
+    text-shadow: 1.5px 1px 1px #98f74ceb;
+}
+
+.video-container {
+    max-width: 60%;
+    max-height: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+/* 
+.ytp-cued-thumbnail-overlay-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+} */
+
+.ytp-cued-thumbnail-overlay {
+    display: none;
+}
+
+.ytp-chrome-top-buttons {
+    display: none;
+}
+
+.ytp-button:not([aria-disabled=true]):not([disabled]):not([aria-hidden=true]) {
+    display: none;
+}
+
+.ytp-player-content.ytp-iv-player-content {
+    display: none;
+}
+
+.html5-video-player {
+    color: #98f74ceb;
+}
+
+.ytp-embed:not(.ad-showing) .ytp-title-text {
+    display: none;
 }
