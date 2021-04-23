@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel review</title>
+</head>
+
+<body>
+    {% for place in destinations %}
+    {{ place.city }}<br>
+    {{ place.country }}<br>
+    {{ place.travel_description }}<br>
+    {{ place.best_memory }}<br>
+    {{ place.advice }}<br>
+    {{ place.due_date }}<br>
+    {% endfor %}
+
+</body>
+
+</html>
