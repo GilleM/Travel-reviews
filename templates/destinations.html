@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!-- video -->
+<div class="video-container">
+    <object width="560" height="315">
+        <param name="movie" value=//www.youtube.com/embed/MyqhDKNig88?rel=0">
+        </param>
+        <embed src="//www.youtube.com/embed/MyqhDKNig88?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true"></embed>
+    </object>
+</div>
+<br>
+
 {% for place in destinations %}
 {{ place.city }}<br>
 {{ place.country }}<br>

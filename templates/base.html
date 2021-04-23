@@ -24,7 +24,7 @@
                 <li><a href="#">My reviews</a></li>
                 <li><a href="#">Log in</a></li>
                 <li><a href="#">Log out</a></li>
-                <li><a href="#">Sign Up</a></li>
+                <li><a href="{{ url_for('sign_up') }}">Sign Up</a></li>
             </ul>
         </div>
     </nav>
@@ -35,19 +35,12 @@
         <li><a href="#">My reviews</a></li>
         <li><a href="#">Log in</a></li>
         <li><a href="#">Log out</a></li>
-        <li><a href="#">Sign Up</a></li>
+        <li><a href="{{ url_for('sign_up') }}">Sign Up</a></li>
     </ul>
 
 
-    <!-- video -->
-    <div class="video-container">
-        <object width="560" height="315">
-            <param name="movie" value=//www.youtube.com/embed/MyqhDKNig88?rel=0">
-            </param>
-            <embed src="//www.youtube.com/embed/MyqhDKNig88?rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true"></embed>
-        </object>
-    </div>
-    <br>
+
+
 
     {% block content %}
     {% endblock %}

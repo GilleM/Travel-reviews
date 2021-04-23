@@ -23,6 +23,12 @@ nav {
     transform: translateX(-50%);
 }
 
+.submit_button_color {
+    background-color: #98f74ceb;
+    text-shadow: 1px 1px 1px grey;
+    ;
+}
+
 /* 
 .ytp-cued-thumbnail-overlay-image {
     background-position: center;
