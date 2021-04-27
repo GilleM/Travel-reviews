@@ -11,6 +11,7 @@
 </div>
 <br> -->
 
+
 {% for place in destinations %}
 {{ place.city }}<br>
 {{ place.country }}<br>
@@ -19,5 +20,23 @@
 {{ place.advice }}<br>
 {{ place.due_date }}<br>
 {% endfor %}
+
+<div class="row">
+    <div class="col s12 m7">
+        <div class="card">
+            <div class="card-image">
+                <img src="https://www.france-voyage.com/visuals/photos/cambrai-13628_w500.jpg">
+                <span class="card-title #424242 grey darken-3">Card Title</span>
+            </div>
+            <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+                <a href="#">This is a link</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
