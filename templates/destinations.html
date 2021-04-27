@@ -12,31 +12,28 @@
 <br> -->
 
 
-{% for place in destinations %}
-{{ place.city }}<br>
-{{ place.country }}<br>
-{{ place.travel_description }}<br>
-{{ place.best_memory }}<br>
-{{ place.advice }}<br>
-{{ place.due_date }}<br>
-{% endfor %}
+
 
 <div class="row">
-    <div class="col s12 m7">
-        <div class="card">
+    {% for place in destinations %}
+    <div class>
+        <div class="card col s10 offset-s1 m4 l3">
             <div class="card-image">
                 <img src="https://www.france-voyage.com/visuals/photos/cambrai-13628_w500.jpg">
-                <span class="card-title #424242 grey darken-3">Card Title</span>
+                <span class="card-title #424242 grey darken-3">{{ place.city }}, {{ place.country }} </span>
             </div>
             <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
+                <p><strong>Travel description:</strong> {{ place.travel_description }}</p>
+                <p><strong>Best memory:</strong> {{ place.best_memory }}</p>
+                <p><strong>Advice to others:</strong> {{ place.advice }}</p>
+                <p><strong> Period you travelled/stayed in this place:</strong> {{ place.due_date }}</p>
             </div>
             <div class="card-action">
-                <a href="#">This is a link</a>
+                <a href="#">Related link, if any</a>
             </div>
         </div>
     </div>
+    {% endfor %}
 </div>
 
 {% endblock %}
