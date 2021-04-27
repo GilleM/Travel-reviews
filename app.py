@@ -102,6 +102,10 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
+@app.route("/add_destination")
+def add_destination():
+    return render_template("add_destination.html")
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

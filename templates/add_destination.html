@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+
+<br>
+<h4 class="center-align">Add destination</h4>
+<br>
+
+<div class="row ">
+    <form class="col s10 offset-s1" method="POST" action="">
+        <div class="row card-panel">
+            <!-- city -->
+            <div class="input-field col s6">
+                <i class="fas fa-city prefix"></i>
+                <input id="icon_city" type="text" minlength="3" class="validate" required>
+                <label for="icon_city">City</label>
+                <span class="helper-text" data-error="Please write the name of the city"></span>
+            </div>
+            <!-- country -->
+            <div class="input-field col s6">
+                <i class="fas fa-globe-europe prefix"></i>
+                <input id="icon_country" type="text" minlength="3" class="validate" required>
+                <label for="icon_country">Country</label>
+                <span class="helper-text" data-error="Please write the name of the country"></span>
+            </div>
+            <!-- travel description -->
+            <div class="input-field col s12">
+                <i class="fas fa-pencil-alt prefix"></i>
+                <input id="icon_description" minlength="10" type="text" class="validate" required>
+                <label for="icon_description">Travel description</label>
+                <span class="helper-text" data-error="Please write min 10 characters"></span>
+            </div>
+            <!-- best memory -->
+            <div class="input-field col s12">
+                <i class="fas fa-pencil-alt prefix"></i>
+                <input id="icon_memory" type="text" minlength="10" class="validate" required>
+                <label for="icon_memory">Best memory</label>
+                <span class="helper-text" data-error="Please write min 10 characters"></span>
+            </div>
+            <!-- advice -->
+            <div class="input-field col s12">
+                <i class="fas fa-pencil-alt prefix"></i>
+                <input id="icon_advice" type="text" minlength="10" class="validate" required>
+                <label for="icon_advice">Advice to others</label>
+                <span class="helper-text" data-error="Please write min 10 characters" data-success="Well done! Thanks!"></span>
+            </div>
+            <!-- Submit button -->
+            <div class="row">
+                <button type="submit" class="col s2 m2 offset-m5 waves-effect waves-light btn submit_button_color">
+                    SUBMIT <i class="fas fa-sign-in-alt"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+{% endblock %}
