@@ -64,3 +64,9 @@ nav {
 .ytp-embed:not(.ad-showing) .ytp-title-text {
     display: none;
 }
+
+/* Flash message */
+.flashes h4 {
+    line-height: 1.5;
+    background-color: #98f74ceb;
+}
