@@ -2,16 +2,16 @@
 {% block content %}
 
 <br>
-<h4 class="center-align">Register and write your travel experience</h4>
+<h4 class="center-align">Log In</h4>
 <br>
 
 <div class="row">
-    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('sign_up') }}">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
         <div class="card-panel">
             <!-- Username -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-user-plus prefix"></i>
+                    <i class="fas fa-user-cog prefix"></i>
                     <input id="username" name="username" type="text" minlength="5" maxlength="15" class="validate" pattern="^[a-zA-Z0-9_]{5,15}$" required>
                     <label for="username">Username</label>
                 </div>
@@ -24,23 +24,23 @@
                     <label for="password">Password</label>
                 </div>
             </div>
-            <!-- Terms and Conditions -->
-            <div class="input-field  col s12">
-                <p>
-                    <label for="checkbox">
-                        <input type="checkbox" id="checkbox" name="checkbox" value="yes" required="">
-                        <span class="blue-grey-text">I agree to the <a class="term_and_conditions teal-text" href="{{ url_for('terms_and_conditions') }}" target="_blank"> Terms and conditions</a></span>
-                    </label>
-                </p>
-            </div>
-            <!-- Sign Up button -->
+            <!-- Log In button -->
             <div class="row">
                 <button type="submit" class="col s2 m2 offset-m5 waves-effect waves-light btn submit_button_color">
-                    Sign Up <i class="fas fa-sign-in-alt"></i>
+                    Log In <i class="fas fa-sign-in-alt"></i>
                 </button>
             </div>
         </div>
     </form>
+</div>
+
+<div class="row">
+    <div class="col s12">
+        <p class="center-align">
+            New Here?
+            <a href="{{ url_for('sign_up') }}" class="light-blue-text text-darken-4">Register Here!</a>
+        </p>
+    </div>
 </div>
 
 
