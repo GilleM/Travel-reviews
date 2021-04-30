@@ -5,10 +5,12 @@ body {
 
 .flexbox {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
 }
+
 
 .brand-logo {
     width: 200px;
@@ -60,27 +62,14 @@ nav {
     max-width: fit-content;
 } */
 
-.destination-section {
-    background-color: #d7ccc8;
+
+
+.open_close_for_description_text {
+    font-size: 15px;
 }
 
-.destination-section h3 {
-    font-family: "Exo", sans-serif;
-    font-size: 5vh;
-    margin-bottom: 70px;
-}
-
-.destination-section a {
-    font-family: "Exo", sans-serif;
-    font-size: 2vh;
-    margin-bottom: 70px;
-}
-
-
-.add_destination_panel {
-    background-color: fff;
-}
-
-.row .col.s3 {
-    width: auto;
+.open_close_for_description_text:hover {
+    font-size: 17px;
+    color: rgb(35, 173, 23);
+    text-emphasis-style: none;
 }

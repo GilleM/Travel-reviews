@@ -16,20 +16,24 @@
 <br>
 
 
-<!-- <div class="container destination-section"> -->
 <div class="row flexbox">
     {% for place in destinations %}
-
-    <div class="card col s3">
+    <div class="card hoverable col s2 m4 l3">
         <div class="card-image waves-effect waves-block waves-light">
             <img class="responsive-img" src="https://www.france-voyage.com/visuals/photos/cambrai-13628_w500.jpg">
         </div>
         <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4"><strong>{{ place.city }}, {{ place.country }}</strong> <i class="material-icons right">Open for description</i></span>
-            <p><a href="#">This is a link</a></p>
+            <span class="center-align card-title activator grey-text text-darken-4"><strong>{{ place.city }}, {{ place.country }}</strong> <i class="material-icons open_close_for_description_text right">Open for description</i></span> <br>
+            <a href="#">
+                <p>Link</p>
+            </a>
+            <a class="waves-effect waves-light btn-small"><i class="fas fa-edit"></i>Edit</a>
+
+            <a class="waves-effect waves-light btn-small"><i class="fas fa-trash-alt left"></i>Delete</a>
+
         </div>
         <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">{{ place.city }}, {{ place.country }} <i class="material-icons right">Close</i></span>
+            <span class="card-title grey-text text-darken-4">{{ place.city }}, {{ place.country }} <i class="material-icons right open_close_for_description_text">Close</i></span>
             <p><strong>Travel description:</strong> {{ place.travel_description }}</p>
             <p><strong>Best memory:</strong> {{ place.best_memory }}</p>
             <p><strong>Advice to others:</strong> {{ place.advice }}</p>
@@ -39,12 +43,6 @@
     </div>
     {% endfor %}
 </div>
-<!-- </div> -->
 
-
-<div class="row">
-    <div class="col s12"><span class="flow-text">This div is 12-columns wide on all screen sizes</span></div>
-    <div class="col s6 offset-s6"><span class="flow-text">6-columns (offset-by-6)</span></div>
-</div>
 
 {% endblock %}
