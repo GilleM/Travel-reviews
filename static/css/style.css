@@ -1,5 +1,13 @@
 body {
     background-color: goldenrod;
+    margin: 0px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 .brand-logo {
@@ -19,54 +27,17 @@ nav {
     text-shadow: 1.5px 1px 1px #98f74ceb;
 }
 
-.video-container {
+/* .video-container {
     max-width: 60%;
     max-height: auto;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-}
-
-.submit_button_color {
-    background-color: #98f74ceb;
-    text-shadow: 1px 1px 1px grey;
-    ;
-}
-
-/* 
-.ytp-cued-thumbnail-overlay-image {
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 80%;
-    height: 80%;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
 } */
 
-.ytp-cued-thumbnail-overlay {
-    display: none;
-}
-
-.ytp-chrome-top-buttons {
-    display: none;
-}
-
-.ytp-button:not([aria-disabled=true]):not([disabled]):not([aria-hidden=true]) {
-    display: none;
-}
-
-.ytp-player-content.ytp-iv-player-content {
-    display: none;
-}
-
-.html5-video-player {
-    color: #98f74ceb;
-}
-
-.ytp-embed:not(.ad-showing) .ytp-title-text {
-    display: none;
+.container {
+    margin: 0px;
+    width: auto;
 }
 
 /* Flash message */
@@ -77,16 +48,39 @@ nav {
 
 /* Cards */
 
-.card-title {
-    text-shadow: 2px 2px black;
+.card {
+    margin: 5px;
 }
+
+/* .card-title {
+    text-shadow: 2px 2px black;
+} */
 
 /* .card-image {
     max-width: fit-content;
 } */
 
+.destination-section {
+    background-color: #d7ccc8;
+}
+
+.destination-section h3 {
+    font-family: "Exo", sans-serif;
+    font-size: 5vh;
+    margin-bottom: 70px;
+}
+
+.destination-section a {
+    font-family: "Exo", sans-serif;
+    font-size: 2vh;
+    margin-bottom: 70px;
+}
 
 
 .add_destination_panel {
     background-color: fff;
+}
+
+.row .col.s3 {
+    width: auto;
 }

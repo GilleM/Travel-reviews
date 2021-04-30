@@ -15,27 +15,36 @@
 <h4 class="center-align">All destinations</h4>
 <br>
 
-<div class="row">
+
+<!-- <div class="container destination-section"> -->
+<div class="row flexbox">
     {% for place in destinations %}
-    <div class>
-        <div class="card col s10 offset-s1 m4 l3">
-            <div class="card-image">
-                <img src="https://www.france-voyage.com/visuals/photos/cambrai-13628_w500.jpg">
-                <span class="card-title #424242 grey darken-3">{{ place.city }}, {{ place.country }} </span>
-            </div>
-            <div class="card-content">
-                <p><strong>Travel description:</strong> {{ place.travel_description }}</p>
-                <p><strong>Best memory:</strong> {{ place.best_memory }}</p>
-                <p><strong>Advice to others:</strong> {{ place.advice }}</p>
-                <p><strong> Period you travelled/stayed in this place:</strong> {{ place.due_date }}</p>
-                <p><strong> Created by:</strong> {{ place.created_by }}</p>
-            </div>
-            <div class="card-action">
-                <a href="#">Related link, if any</a>
-            </div>
+
+    <div class="card col s3">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="responsive-img" src="https://www.france-voyage.com/visuals/photos/cambrai-13628_w500.jpg">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4"><strong>{{ place.city }}, {{ place.country }}</strong> <i class="material-icons right">Open for description</i></span>
+            <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">{{ place.city }}, {{ place.country }} <i class="material-icons right">Close</i></span>
+            <p><strong>Travel description:</strong> {{ place.travel_description }}</p>
+            <p><strong>Best memory:</strong> {{ place.best_memory }}</p>
+            <p><strong>Advice to others:</strong> {{ place.advice }}</p>
+            <p><strong> Period you travelled/stayed in this place:</strong> {{ place.due_date }}</p>
+            <p><strong> Created by:</strong> {{ place.created_by }}</p>
         </div>
     </div>
     {% endfor %}
+</div>
+<!-- </div> -->
+
+
+<div class="row">
+    <div class="col s12"><span class="flow-text">This div is 12-columns wide on all screen sizes</span></div>
+    <div class="col s6 offset-s6"><span class="flow-text">6-columns (offset-by-6)</span></div>
 </div>
 
 {% endblock %}
