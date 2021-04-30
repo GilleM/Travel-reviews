@@ -102,10 +102,23 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
-@app.route("/add_destination")
+@app.route("/add_destination", methods=["GET", "POST"])
 def add_destination():
-    return render_template("add_destination.html")
+    if request.method == "POST":
+        place = {
+            "city": request.form.get("city"),
+            "country": request.form.get("country"),
+            "travel_description": request.form.get("travel_description"),
+            "best_memory": request.form.get("best_memory"),
+            "advice": request.form.get("advice"),
+            "due_date": request.form.get("due_date"),
+            "created_by": session["user"]
+        }
+        mongo.db.destinations.insert_one(place)
+        flash("New Place Successfully Added!")
+        return redirect(url_for("get_destination"))
 
+    return render_template("add_destination.html")
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

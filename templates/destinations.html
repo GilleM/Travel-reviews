@@ -11,8 +11,9 @@
 </div>
 <br> -->
 
-
-
+<br>
+<h4 class="center-align">All destinations</h4>
+<br>
 
 <div class="row">
     {% for place in destinations %}
@@ -27,6 +28,7 @@
                 <p><strong>Best memory:</strong> {{ place.best_memory }}</p>
                 <p><strong>Advice to others:</strong> {{ place.advice }}</p>
                 <p><strong> Period you travelled/stayed in this place:</strong> {{ place.due_date }}</p>
+                <p><strong> Created by:</strong> {{ place.created_by }}</p>
             </div>
             <div class="card-action">
                 <a href="#">Related link, if any</a>
