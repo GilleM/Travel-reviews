@@ -27,7 +27,7 @@
             <a href="#">
                 <p>Link</p>
             </a>
-            <a class="waves-effect waves-light btn-small"><i class="fas fa-edit"></i>Edit</a>
+            <a href="{{ url_for('edit_destination', place_id=place._id) }}" class="waves-effect waves-light btn-small"><i class="fas fa-edit"></i>Edit</a>
 
             <a class="waves-effect waves-light btn-small"><i class="fas fa-trash-alt left"></i>Delete</a>
 

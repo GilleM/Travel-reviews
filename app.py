@@ -120,6 +120,11 @@ def add_destination():
 
     return render_template("add_destination.html")
 
+@app.route("/edit_destination/<place_id>", methods=["GET", "POST"])
+def edit_destination(place_id):
+    place = mongo.db.destinations.find_one({"_id": ObjectId(place_id)})
+    return render_template("edit_destination.html", place=place)
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
