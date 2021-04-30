@@ -11,52 +11,57 @@
             <!-- city -->
             <div class="input-field col s6">
                 <i class="fas fa-city prefix"></i>
-                <input id="city" name="city" type="text" minlength="3" class="validate" required>
+                <input id="city" value="{{ place.city }}" name="city" type="text" minlength="3" class="validate" required>
                 <label for="city">City</label>
                 <span class="helper-text" data-error="Please write the name of the city"></span>
             </div>
             <!-- country -->
             <div class="input-field col s6">
                 <i class="fas fa-globe-europe prefix"></i>
-                <input id="country" name="country" type="text" minlength="3" class="validate" required>
+                <input id="country" value="{{ place.country }}" name="country" type="text" minlength="3" class="validate" required>
                 <label for="country">Country</label>
                 <span class="helper-text" data-error="Please write the name of the country"></span>
             </div>
             <!-- travel description -->
             <div class="input-field col s12">
                 <i class="fas fa-pencil-alt prefix"></i>
-                <input id="travel_description" name="travel_description" minlength="10" type="text" class="validate" required>
+                <input id="travel_description" value="{{ place.travel_description }}" name="travel_description" minlength="10" type="text" class="validate" required>
                 <label for="travel_description">Travel description</label>
                 <span class="helper-text" data-error="Please write min 10 characters"></span>
             </div>
             <!-- best memory -->
             <div class="input-field col s12">
-                <i class="fas fa-pencil-alt prefix"></i>
-                <input id="best_memory" name="best_memory" type="text" minlength="10" class="validate" required>
+                <i class="fas fa-kiss-beam prefix"></i>
+                <input id="best_memory" value="{{ place.best_memory }}" name="best_memory" type="text" minlength="10" class="validate" required>
                 <label for="best_memory">Best memory</label>
                 <span class="helper-text" data-error="Please write min 10 characters"></span>
             </div>
             <!-- Advice -->
             <div class="input-field col s12">
-                <i class="fas fa-pencil-alt prefix"></i>
-                <input id="advice" name="advice" type="text" minlength="10" class="validate" required>
+                <i class="fas fa-comment prefix"></i>
+                <input id="advice" value="{{ place.advice }}" name="advice" type="text" minlength="10" class="validate" required>
                 <label for="advice">Advice to others</label>
                 <span class="helper-text" data-error="Please write min 10 characters" data-success="Well done! Thanks!"></span>
             </div>
             <!-- Travel period -->
             <div class="input-field col s12">
                 <i class="fas fa-table prefix"></i>
-                <input id="due_date" name="due_date" type="date" class="validate">
+                <input id="due_date" value="{{ place.due_date }}" name="due_date" type="date" class="validate">
                 <label for="due_date">When did you visit the place?</label>
                 <span class="helper-text" data-error data-success>Optional</span>
             </div>
             <!-- Submit button -->
             <div class="row">
-                <button type="submit" class="col s2 m2 offset-m5 waves-effect waves-light btn submit_button_color">
-                    Edit destination <i class="fas fa-edit"></i>
-                </button>
+                <div class="col s12 center-align">
+                    <!-- cancel button -->
+                    <a href="{{ url_for('get_destination') }}" class="btn red text-shadow">
+                        Cancel <i class="fas fa-times-circle right"></i>
+                    </a>
+                    <button type="submit" class="waves-effect waves-light btn submit_button_color">
+                        Edit destination <i class="fas fa-edit"></i>
+                    </button>
+                </div>
             </div>
-        </div>
     </form>
 </div>
 

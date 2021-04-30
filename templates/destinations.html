@@ -27,10 +27,13 @@
             <a href="#">
                 <p>Link</p>
             </a>
-            <a href="{{ url_for('edit_destination', place_id=place._id) }}" class="waves-effect waves-light btn-small"><i class="fas fa-edit"></i>Edit</a>
 
-            <a class="waves-effect waves-light btn-small"><i class="fas fa-trash-alt left"></i>Delete</a>
+            <div class="col s12 center-align">
 
+                <a href="{{ url_for('edit_destination', place_id=place._id) }}" class="waves-effect waves-light btn-small"><i class="fas fa-edit"></i>Edit</a>
+
+                <a class="waves-effect waves-light btn-small"><i class="fas fa-trash-alt left"></i>Delete</a>
+            </div>
         </div>
         <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">{{ place.city }}, {{ place.country }} <i class="material-icons right open_close_for_description_text">Close</i></span>
