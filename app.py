@@ -122,8 +122,21 @@ def add_destination():
 
 @app.route("/edit_destination/<place_id>", methods=["GET", "POST"])
 def edit_destination(place_id):
+    if request.method == "POST":
+        submit = {
+            "city": request.form.get("city"),
+            "country": request.form.get("country"),
+            "travel_description": request.form.get("travel_description"),
+            "best_memory": request.form.get("best_memory"),
+            "advice": request.form.get("advice"),
+            "due_date": request.form.get("due_date"),
+            "created_by": session["user"]
+        }
+        mongo.db.destinations.update({"_id": ObjectId(place_id)}, submit)
+        flash("New Place Successfully Updated!")
     place = mongo.db.destinations.find_one({"_id": ObjectId(place_id)})
     return render_template("edit_destination.html", place=place)
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
