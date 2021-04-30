@@ -50,7 +50,7 @@ def sign_up():
     return render_template("sign_up.html")
 
 
-@app.route('/term_and_conditions')
+@app.route('/terms_and_conditions')
 def terms_and_conditions():
 
     return render_template("terms_and_conditions.html")
