@@ -1,5 +1,5 @@
 body {
-    background-color: goldenrod;
+    background-color: rgba(17, 9, 22, 0.911);
     margin: 0px;
 }
 
@@ -52,6 +52,7 @@ nav {
 
 .card {
     margin: 5px;
+    width: 22%;
 }
 
 /* .card-title {
