@@ -9,6 +9,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    margin-bottom: 50px;
+    margin-top: 25px;
 }
 
 
@@ -53,17 +55,20 @@ nav {
 .card {
     margin: 5px;
     width: 22%;
+    border: 2px ridge #98f74ceb;
 }
 
-/* .card-title {
-    text-shadow: 2px 2px black;
-} */
+.card-panel {
+    border: 2px ridge #98f74ceb;
+}
 
 /* .card-image {
     max-width: fit-content;
 } */
 
-
+.page_title {
+    color: rgb(255, 255, 255);
+}
 
 .open_close_for_description_text {
     font-size: 15px;
@@ -73,4 +78,31 @@ nav {
     font-size: 17px;
     color: rgb(35, 173, 23);
     text-emphasis-style: none;
+}
+
+
+
+/*  ------------------------------FOOTER-----------------------------------  */
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    min-height: 25px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.social-links li a i {
+    font-size: 1.8rem;
+    color: #979797c2;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.social-links li a i:hover {
+    color: #98f74ceb;
 }

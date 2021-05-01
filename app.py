@@ -133,10 +133,15 @@ def edit_destination(place_id):
             "created_by": session["user"]
         }
         mongo.db.destinations.update({"_id": ObjectId(place_id)}, submit)
-        flash("New Place Successfully Updated!")
+        flash("New Destination Successfully Updated!")
     place = mongo.db.destinations.find_one({"_id": ObjectId(place_id)})
     return render_template("edit_destination.html", place=place)
 
+@app.route("/delete_destination/<place_id>")
+def delete_destination(place_id):
+    mongo.db.destinations.remove({"_id": ObjectId(place_id)})
+    flash("Destination Successfully Deleted")
+    return redirect(url_for("get_destination"))
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
