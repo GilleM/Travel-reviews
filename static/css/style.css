@@ -26,10 +26,11 @@ nav {
     height: 200px;
 }
 
-.nav-text {
-    font-size: 30px;
+nav ul a {
+    font-size: 18px;
     text-shadow: 1.5px 1px 1px #98f74ceb;
 }
+
 
 /* .video-container {
     max-width: 60%;
@@ -40,7 +41,6 @@ nav {
 } */
 
 .container {
-    margin: 0px;
     width: auto;
 }
 
