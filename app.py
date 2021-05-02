@@ -143,7 +143,7 @@ def edit_destination(place_id):
 
         }
         mongo.db.destinations.update({"_id": ObjectId(place_id)}, submit)
-        flash("New Destination Successfully Updated!")
+        flash("Destination Successfully Updated!")
     place = mongo.db.destinations.find_one({"_id": ObjectId(place_id)})
     return render_template("edit_destination.html", place=place)
 
