@@ -62,6 +62,46 @@ nav ul a {
     border: 2px ridge #98f74ceb;
 }
 
+.search-panel {
+    border-radius: 50px;
+    background-color: #6d6d6d3b;
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.search-container {
+    margin-bottom: 0px;
+}
+
+.reset-button {
+    transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    background-color: #634d62;
+}
+
+.reset-button:hover {
+    background-color: #3c2b3b
+}
+
+.search-button {
+    transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    background-color: #69b32eeb;
+    ;
+}
+
+.search-button:hover {
+    background-color: #376314eb;
+}
+
+
 /* .card-image {
     max-width: fit-content;
 } */

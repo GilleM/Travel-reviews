@@ -25,6 +25,12 @@ def get_destination():
     destinations = mongo.db.destinations.find()
     return render_template("destinations.html", destinations=destinations)
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    destinations = mongo.db.destinations.find({"$text": {"$search": query}})
+    return render_template("destinations.html", destinations=destinations)
+
 
 @app.route("/sign_up", methods=["GET", "POST"])
 def sign_up():

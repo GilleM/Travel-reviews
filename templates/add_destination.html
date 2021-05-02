@@ -18,7 +18,7 @@
             <!-- country -->
             <div class="input-field col s6">
                 <i class="fas fa-globe-europe prefix"></i>
-                <input id="country" name="country" type="text" minlength="3" class="validate" required>
+                <input id="country" name="country" type="text" minlength="2" class="validate" required>
                 <label for="country">Country</label>
                 <span class="helper-text" data-error="Please write the name of the country"></span>
             </div>
@@ -49,6 +49,13 @@
                 <input id="due_date" name="due_date" type="date" class="validate">
                 <label for="due_date">When did you visit the place?</label>
                 <span class="helper-text" data-error data-success>Optional</span>
+            </div>
+            <!-- Destination image url link -->
+            <div class="input-field blue-grey-text col s12">
+                <i class="far fa-image blue-grey-text prefix"></i>
+                <input id="destination_image_url" name="destination_image_url" type="text" class="validate" minlength="5" maxlength="150" pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$" required>
+                <label for="destination_image_url">Destination Cover Image Link</label>
+                <p class="blue-grey-text sub-note hide-on-med-and-down">Valid URL link</p>
             </div>
             <!-- Submit button -->
             <div class="row">
