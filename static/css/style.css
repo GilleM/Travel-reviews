@@ -112,6 +112,7 @@ nav ul a {
 
 .open_close_for_description_text {
     font-size: 15px;
+    text-emphasis-style: none;
 }
 
 .open_close_for_description_text:hover {
