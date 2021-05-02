@@ -147,3 +147,8 @@ footer {
 .social-links li a i:hover {
     color: #98f74ceb;
 }
+
+/* Terms and Conditions */
+.terms_and_condition_text {
+    color: rgb(162 162 162 / 82%);
+}
