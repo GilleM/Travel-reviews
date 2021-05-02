@@ -118,7 +118,9 @@ def add_destination():
             "best_memory": request.form.get("best_memory"),
             "advice": request.form.get("advice"),
             "due_date": request.form.get("due_date"),
-            "created_by": session["user"]
+            "created_by": session["user"],
+            "destination_image_url": request.form.get("destination_image_url"),
+
         }
         mongo.db.destinations.insert_one(place)
         flash("New Place Successfully Added!")
@@ -136,7 +138,9 @@ def edit_destination(place_id):
             "best_memory": request.form.get("best_memory"),
             "advice": request.form.get("advice"),
             "due_date": request.form.get("due_date"),
-            "created_by": session["user"]
+            "created_by": session["user"],
+            "destination_image_url": request.form.get("destination_image_url"),
+
         }
         mongo.db.destinations.update({"_id": ObjectId(place_id)}, submit)
         flash("New Destination Successfully Updated!")
