@@ -120,6 +120,7 @@ def add_destination():
             "due_date": request.form.get("due_date"),
             "created_by": session["user"],
             "destination_image_url": request.form.get("destination_image_url"),
+            "extra_url": request.form.get("extra_url"),
 
         }
         mongo.db.destinations.insert_one(place)
@@ -140,6 +141,7 @@ def edit_destination(place_id):
             "due_date": request.form.get("due_date"),
             "created_by": session["user"],
             "destination_image_url": request.form.get("destination_image_url"),
+            "extra_url": request.form.get("extra_url"),
 
         }
         mongo.db.destinations.update({"_id": ObjectId(place_id)}, submit)

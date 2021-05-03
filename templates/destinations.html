@@ -43,12 +43,16 @@
             <img src="{{ place.destination_image_url }}">
         </div>
         <div class="card-content">
+            <!-- City, Country -->
             <span class="center-align card-title activator grey-text text-darken-4"><strong>{{ place.city }}, {{ place.country }}</strong>
-                <hr><i class="material-icons open_close_for_description_text right">Open for description</i></span> <br>
-            <a href="#">
-                <p>Link</p>
-            </a>
-            <!-- Hide the button is different user -->
+                <hr> <!-- Link to extra url -->
+                <a href="{{ place.extra_url }}" class="waves-effect waves-light extra-url-btn" target="_blank">
+                    <i class="fas fa-link"></i>
+                </a>
+                <!-- OPEN description button -->
+                <i class="btn open-description-btn">Open for description</i></span>
+
+            <!-- Hide the button if different user -->
             {% if session.user|lower == place.created_by|lower %}
             <div class="col s12 center-align">
                 <a href="{{ url_for('edit_destination', place_id=place._id) }}" class="waves-effect waves-light btn-small"><i class="fas fa-edit"></i>Edit</a>
@@ -57,12 +61,15 @@
             {% endif %}
         </div>
         <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">{{ place.city }}, {{ place.country }} <i class="material-icons right open_close_for_description_text">Close</i></span>
+            <!-- CLOSE description button, City, Country -->
+            <span class="card-title">{{ place.city }}, {{ place.country }}<i class="btn-small fas fa-times close-description-btn right"></i>
+                <hr></span>
             <p><strong>Travel description:</strong> {{ place.travel_description }}</p>
             <p><strong>Best memory:</strong> {{ place.best_memory }}</p>
             <p><strong>Advice to others:</strong> {{ place.advice }}</p>
             <p><strong> Period you travelled/stayed in this place:</strong> {{ place.due_date }}</p>
-            <p><strong> Created by:</strong> {{ place.created_by }}</p>
+            <p class="right"><em> Created by:</em> {{ place.created_by }}</p>
+
         </div>
     </div>
     {% endfor %}
