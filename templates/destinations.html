@@ -46,11 +46,14 @@
             <!-- City, Country -->
             <span class="center-align card-title activator grey-text text-darken-4"><strong>{{ place.city }}, {{ place.country }}</strong>
                 <hr> <!-- Link to extra url -->
+
+                {% if place.extra_url|length > 0 %}
                 <a href="{{ place.extra_url }}" class="waves-effect waves-light extra-url-btn" target="_blank">
                     <i class="fas fa-link"></i>
                 </a>
+                {% endif %}
                 <!-- OPEN description button -->
-                <i class="btn open-description-btn">Open for description</i></span>
+                <i class="btn open-description-btn">Travel description</i></span>
 
             <!-- Hide the button if different user -->
             {% if session.user|lower == place.created_by|lower %}
@@ -62,7 +65,9 @@
         </div>
         <div class="card-reveal">
             <!-- CLOSE description button, City, Country -->
-            <span class="card-title">{{ place.city }}, {{ place.country }}<i class="btn-small fas fa-times close-description-btn right"></i>
+            <span class="card-title">{{ place.city }}, {{ place.country }}
+                <i class="btn-small fas fa-times close-description-btn right"></i>
+
                 <hr></span>
             <p><strong>Travel description:</strong> {{ place.travel_description }}</p>
             <p><strong>Best memory:</strong> {{ place.best_memory }}</p>
