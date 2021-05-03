@@ -22,7 +22,7 @@
             <ul class="right hide-on-med-and-down nav-text">
                 <li><a href="{{ url_for('get_destination') }}">Our travels</a></li>
                 {% if session.user %}
-                <li><a href="{{ url_for('get_destination', username=session['user']) }}">My reviews</a></li>
+                <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                 <li><a href="{{ url_for('add_destination') }}">Add destination</a></li>
                 <li><a href="{{ url_for('logout') }}">Log out</a></li>
                 {% else %}

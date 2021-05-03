@@ -1,45 +1,45 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# TRAVEL REVIEW PROJECT
 
-Welcome GilleM,
+**Code Institute - Milestone Project for Data Centric Development**
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+![pic](wireframes/proba.jpg)
 
-## Gitpod Reminders
+Welcome to my third Code Institute milestone project that you can check out by clicking on [here](https://travel-reviews-project.herokuapp.com/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+[GitHub repository](https://github.com/GilleM/Travel-reviews)
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## Project Description
+***
+**TRAVEL REVIEW PROJECT** is one of the milestone projects I did at the Code Institute Full Stack Developer course. The main requirements were to make a MongoDB-backed Flask project for a web application that allows users to store and manipulate data records about a particular domain. We needed to respect CRUD functionality and to design a database structure that would suit well for required domain.
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+## Table of Contents
 
-Another blue button should appear to click: _Open Browser_.
+1. [Introduction](#introduction)<br/>
+2. [UX](#ux)<br/>
+3. [Features](#features)<br/>
+    - 3.1. [Our travels](#our-travels)<br/>
+    - 3.2. [My reviews](#my-reviews)<br/>
+    - 3.3. [Add destination](#add-destination)<br/>
+4. [Technologies Used](#technologies-used)<br/>
+5. [Database architecture](#database-architecture)<br/>
+6. [Testing](#testing)<br/>
+    - 6.1. [Making a shared destination library](#making-a-shared-destination-library)<br/>
+        - 6.1.1. [Create a user account](#create-a-user-account)<br/>
+        - 6.1.2. [User personal destination library](#user-personal-book-library)<br/>
+        - 6.1.4. [Our travels home page](#our-travels-home-page)<br/>
+        - 6.1.5. [Search in the destinations](#search-in-the-destinations)<br/>
+    - 6.2. [The website validation](#the-website-validation)<br/>
+7. [Deployment](#deployment)<br/>
+    - 7.1. [GitHub](#gitHub)<br/>
+    - 7.2. [Heroku](#heroku)<br/>
+8. [Content](#content)<br/>
+9. [Media](#media)<br/>
+10. [Acknowledgements](#acknowledgements)<br/>
+11. [Disclaimer](#disclaimer)<br/>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<br/>
 
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-Happy coding!
+## UX

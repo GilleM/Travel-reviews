@@ -20,18 +20,21 @@ mongo = PyMongo(app)
 
 @app.route("/")
 
+# GET DESTINATION
 @app.route("/get_destination")
 def get_destination():
     destinations = mongo.db.destinations.find()
     return render_template("destinations.html", destinations=destinations)
 
+
+# SEARCH
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
     destinations = mongo.db.destinations.find({"$text": {"$search": query}})
     return render_template("destinations.html", destinations=destinations)
 
-
+# REGISTER
 @app.route("/sign_up", methods=["GET", "POST"])
 def sign_up():
     if request.method == "POST":
@@ -55,13 +58,7 @@ def sign_up():
   
     return render_template("sign_up.html")
 
-
-@app.route('/terms_and_conditions')
-def terms_and_conditions():
-
-    return render_template("terms_and_conditions.html")
-
-
+# LOGIN
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -89,6 +86,7 @@ def login():
 
     return render_template("login.html")
 
+# PROFILE
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # grab the session user's username from db
@@ -100,7 +98,7 @@ def profile(username):
 
     return redirect(url_for("login"))
 
-
+# LOGOUT
 @app.route("/logout")
 def logout():
     # remove user from session cookie
@@ -108,6 +106,7 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
+# ADD DESTINATION
 @app.route("/add_destination", methods=["GET", "POST"])
 def add_destination():
     if request.method == "POST":
@@ -129,6 +128,8 @@ def add_destination():
 
     return render_template("add_destination.html")
 
+
+# EDIT DESTINATION
 @app.route("/edit_destination/<place_id>", methods=["GET", "POST"])
 def edit_destination(place_id):
     if request.method == "POST":
@@ -149,11 +150,18 @@ def edit_destination(place_id):
     place = mongo.db.destinations.find_one({"_id": ObjectId(place_id)})
     return render_template("edit_destination.html", place=place)
 
+# DELETE DESTINATION
 @app.route("/delete_destination/<place_id>")
 def delete_destination(place_id):
     mongo.db.destinations.remove({"_id": ObjectId(place_id)})
     flash("Destination Successfully Deleted")
     return redirect(url_for("get_destination"))
+
+# TERMS AND CONDITIONS
+@app.route('/terms_and_conditions')
+def terms_and_conditions():
+
+    return render_template("terms_and_conditions.html")
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
