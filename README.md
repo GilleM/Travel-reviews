@@ -62,7 +62,7 @@ and how my project is the best way to help them achieve these things.
 - to respect CRUD functionality so users can create, read, edit and delete the contents they wrote,
 - to include "Search field" so users can get familiar with the destinations they would like to go,
 - to write interactive JavaScript code so it can help with more intuitive UX (e.g. navbar on mobile devices)
-- generally, to make an interesting and usefull backend web page that can help travellers to leave their experience and read the others' in order to get more information
+- generally, to make an interesting and usefull backend web page that can help travellers to describe their experience and read the others' in order to get more information
 
 ### The business goals of this website is:
 
@@ -92,12 +92,12 @@ I introduced social links that lead to random pages, as well as the link for the
 
 
  _Our Travels_ page:
-*   **navbar** is on the top, coloured in black. It is the same for the whole pages. In the middle of it is the logo I created for Travel review purpose and on the right are categories: _Our Travels_, _My Profile_, _Add destination_ and _Log Out_. When not registered, _Log Out_ is not there, but _Log In_ and _Sign Up_ appear.
+*   **navbar** is on the top, coloured in black. It is the same for all the pages. In the middle of it is the logo I created for Travel review purpose and on the right are categories: _Our Travels_, _My Profile_, _Add destination_ and _Log Out_. When not registered, _Log Out_ is not there, but _Log In_ and _Sign Up_ appear.
 
 * The **central part** is composed of the search field that is centered above the flexbox section of Materialize's Card Reveal. Those cards have image and name of the destination and it reveals more information of the travel once button is clicked. They are nicely distributed and easy to use.
 Below each image there is the link icon if the link is provided. Otherwise it is not visible. Next to it is abovementioned button that reveals the information about the destinations (the categories are listed in the central part of the _Add destination_ category).
 
-* **Footer** includes social links, a link for _Terms and Conditions_ with the text: Website created by Matea Leka © 2021.
+* **Footer** includes social links, a link for _Terms and Conditions_ with the text: _Website created by Matea Leka © 2021._
 
 
 
@@ -112,7 +112,7 @@ Below each image there is the link icon if the link is provided. Otherwise it is
  _Add destination_ page:
 *   **navbar** - as in _Our Travels_ page.
 
-* The **central part** - Below the form container there's centered "Add destination" header. <br/>
+* The **central part** - Above the form container there's centered "Add destination" header. <br/>
 The form below is composed of the following fields:
     - City
     - Country
@@ -121,7 +121,9 @@ The form below is composed of the following fields:
     - Advice to others
     - Date of travel/stay
     - Destination cover link
-    - Extra link, if any
+    - Extra link, if any 
+<br/>
+
 Left to each field there's an icon.
 Below the form is a _Submit_ button. 
 
@@ -130,8 +132,10 @@ Below the form is a _Submit_ button.
 _Log In_ and _Sign Up_ pages:
 *   **navbar** - as in _Our Travels_ page.
 
-* The **central part** - The header is centered on the top of the form. The form in both consists of providing the Username and the Password as well as _Submit_ button below the form.
-On the _Sign Up_ page there is checkbox provided that the new user needs to agree on terms and conditions provided. They open on new tab once clicked on. The _Log In_ page has additional link under the form that leads to Register form if the user doesn't have an account.
+* The **central part** - The header is centered at the top of the form. The form in both consists of providing the Username and the Password as well as _Submit_ button below the form.
+<br/>
+On the _Sign Up_ page there is checkbox provided that the new user needs to agree on terms and conditions provided. They open on the new tab once clicked on. <br/> 
+The _Log In_ page has additional link under the form that leads to Register form if the user doesn't have an account.
 
 * **Footer** - as in _Our Travels_ page.
 

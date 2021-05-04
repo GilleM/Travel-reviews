@@ -14,7 +14,7 @@
 
 
   <div class="flexbox">
-      {% for place in destinations %}
+      {% for place in destinations if session.user|lower == place.created_by|lower %}
       <div class="card hoverable">
           <div class="card-image waves-effect waves-block waves-light">
               <img src="{{ place.destination_image_url }}">
@@ -32,12 +32,10 @@
                   <i class="btn open-description-btn">Travel description</i></span>
 
               <!-- Hide the button if different user -->
-              {% if session.user|lower == place.created_by|lower %}
               <div class="col s12 center-align">
                   <a href="{{ url_for('edit_destination', place_id=place._id) }}" class="waves-effect waves-light btn-small"><i class="fas fa-edit"></i>Edit</a>
                   <a href="{{ url_for('delete_destination', place_id=place._id) }}" class="waves-effect waves-light btn-small"><i class="fas fa-trash-alt left"></i>Delete</a>
               </div>
-              {% endif %}
           </div>
           <div class="card-reveal">
               <!-- CLOSE description button, City, Country -->
