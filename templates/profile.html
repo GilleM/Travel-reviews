@@ -1,60 +1,68 @@
   {% extends "base.html" %}
   {% block content %}
 
-  <div class="row">
-      <div class="col s12 m8 offset-m2">
-          <div class="card-panel">
-              <h3 class="center-align light-blue-text text-darken-4">
-                  {{ username }}'s Profile</a>
-                  <a class="btn btn-large teal" href="{{ url_for('add_destination') }}">My Destinations <i class="fas fa-map-marker-alt"></i></a>
-              </h3>
-          </div>
-      </div>
-  </div>
+  <body class="profile-body">
 
 
-  <div class="flexbox">
-      {% for place in destinations %}
-      {% if session.user|lower == place.created_by|lower %}
-      <div class="card hoverable">
-          <div class="card-image waves-effect waves-block waves-light">
-              <img src="{{ place.destination_image_url }}">
-          </div>
-          <div class="card-content">
-              <!-- City, Country -->
-              <span class="center-align card-title activator grey-text text-darken-4"><strong>{{ place.city }}, {{ place.country }}</strong>
-                  <hr> <!-- Hide icon link to extra url if url empty -->
-                  {% if place.extra_url|length > 0 %}
-                  <a href="{{ place.extra_url }}" class="waves-effect waves-light extra-url-btn" target="_blank">
-                      <i class="fas fa-link"></i>
-                  </a>
-                  {% endif %}
-                  <!-- OPEN description button -->
-                  <i class="btn open-description-btn">Travel description</i></span>
-
-              <!-- Hide the button if different user -->
-              <div class="col s12 center-align">
-                  <a href="{{ url_for('edit_destination', place_id=place._id) }}" class="waves-effect waves-light btn-small"><i class="fas fa-edit"></i>Edit</a>
-                  <a href="{{ url_for('delete_destination', place_id=place._id) }}" class="waves-effect waves-light btn-small"><i class="fas fa-trash-alt left"></i>Delete</a>
+      <div class="row">
+          <div class="col s12 m8 offset-m2">
+              <div class="card-panel profile-card-panel">
+                  <h3 class="center-align profile-header">
+                      {{ username }}'s profile</a>
+                      <a class="btn" href="{{ url_for('add_destination') }}">My wish list <i class="fas fa-map-marker-alt"></i></a>
+                  </h3>
               </div>
-
-          </div>
-          <div class="card-reveal">
-              <!-- CLOSE description button, City, Country -->
-              <span class="card-title">{{ place.city }}, {{ place.country }}
-                  <i class="btn-small fas fa-times close-description-btn right"></i>
-
-                  <hr></span>
-              <p><strong>Travel description:</strong> {{ place.travel_description }}</p>
-              <p><strong>Best memory:</strong> {{ place.best_memory }}</p>
-              <p><strong>Advice to others:</strong> {{ place.advice }}</p>
-              <p><strong> Period you travelled/stayed in this place:</strong> {{ place.due_date }}</p>
-              <p class="right"><em> Created by:</em> {{ place.created_by }}</p>
-
           </div>
       </div>
-      {% endif %}
 
-      {% endfor %}
-  </div>
-  {% endblock %}
+      <br>
+      <h5 class="center-align page_title">My destinations reviews</h4>
+          <br>
+
+
+          <div class="flexbox">
+              {% for place in destinations %}
+              {% if session.user|lower == place.created_by|lower %}
+              <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light">
+                      <img src="{{ place.destination_image_url }}">
+                  </div>
+                  <div class="card-content">
+                      <!-- City, Country -->
+                      <span class="center-align card-title activator grey-text text-darken-4"><strong>{{ place.city }}, {{ place.country }}</strong>
+                          <hr> <!-- Hide icon link to extra url if url empty -->
+                          {% if place.extra_url|length > 0 %}
+                          <a href="{{ place.extra_url }}" class="waves-effect waves-light extra-url-btn" target="_blank">
+                              <i class="fas fa-link"></i>
+                          </a>
+                          {% endif %}
+                          <!-- OPEN description button -->
+                          <i class="btn open-description-btn">Travel description</i></span>
+
+                      <!-- Hide the button if different user -->
+                      <div class="col s12 center-align">
+                          <a href="{{ url_for('edit_destination', place_id=place._id) }}" class="center-align waves-effect waves-light btn"><i class="fas fa-edit"></i></a>
+                          <a href="{{ url_for('delete_destination', place_id=place._id) }}" class="center-align waves-effect waves-light btn"><i class="fas fa-trash-alt left"></i></a>
+                      </div>
+
+                  </div>
+                  <div class="card-reveal">
+                      <!-- CLOSE description button, City, Country -->
+                      <span class="card-title">{{ place.city }}, {{ place.country }}
+                          <i class="btn-small fas fa-times close-description-btn right"></i>
+
+                          <hr></span>
+                      <p><strong>Travel description:</strong> {{ place.travel_description }}</p>
+                      <p><strong>Best memory:</strong> {{ place.best_memory }}</p>
+                      <p><strong>Advice to others:</strong> {{ place.advice }}</p>
+                      <p><strong> Period you travelled/stayed in this place:</strong> {{ place.due_date }}</p>
+                      <p class="right"><em> Created by:</em> {{ place.created_by }}</p>
+
+                  </div>
+              </div>
+              {% endif %}
+
+              {% endfor %}
+          </div>
+          {% endblock %}
+  </body>
