@@ -90,9 +90,9 @@ I introduced social links that lead to random pages, as well as the link for the
 
 ## 3. Structure
 
+### _**Our Travels**_:
 
- _Our Travels_ page:
-*   **navbar** is on the top, coloured in black. It is the same for all the pages. In the middle of it is the logo I created for Travel review purpose and on the right are categories: _Our Travels_, _My Profile_, _Add destination_ and _Log Out_. When not registered, _Log Out_ is not there, but _Log In_ and _Sign Up_ appear.
+* The  **navbar** is on the top, coloured in black. It is the same for all the pages. In the middle of it is the logo I created for Travel review purpose and on the right are categories: _Our Travels_, _My Profile_, _Add destination_ and _Log Out_. When not registered, _Log Out_ is not there, but _Log In_ and _Sign Up_ appear.
 
 * The **central part** is composed of the search field that is centered above the flexbox section of Materialize's Card Reveal. Those cards have image and name of the destination and it reveals more information of the travel once button is clicked. They are nicely distributed and easy to use.
 Below each image there is the link icon if the link is provided. Otherwise it is not visible. Next to it is abovementioned button that reveals the information about the destinations (the categories are listed in the central part of the _Add destination_ category).
@@ -100,19 +100,20 @@ Below each image there is the link icon if the link is provided. Otherwise it is
 * **Footer** includes social links, a link for _Terms and Conditions_ with the text: _Website created by Matea Leka © 2021._
 
 
+### _**My Profile**_:
 
- _My Profile_ page:
-*   **navbar** - as in _Our Travels_ page.
+* The **navbar** - as in _Our Travels_ page.
 
 * The **central part** has the user profile name. Below we can see the Materialize cards done only by the logged in User and also distributed in flex. This time they can be Edited and Deleted.
 
 * **Footer** - as in _Our Travels_ page.
 
+### _**Add destination**_:
 
- _Add destination_ page:
-*   **navbar** - as in _Our Travels_ page.
+* The **navbar** - as in _Our Travels_ page.
 
-* The **central part** - Above the form container there's centered "Add destination" header. <br/>
+* The **central part** - Above the form container there's centered "Add destination" header. <br/> Left to each field listed below there's an icon.
+Below the form is a _Submit_ button. <br/>
 The form below is composed of the following fields:
     - City
     - Country
@@ -124,13 +125,13 @@ The form below is composed of the following fields:
     - Extra link, if any 
 <br/>
 
-Left to each field there's an icon.
-Below the form is a _Submit_ button. 
+
 
 * **Footer** - as in _Our Travels_ page.
 
-_Log In_ and _Sign Up_ pages:
-*   **navbar** - as in _Our Travels_ page.
+### _**Log In**_ and ### _**Sign Up**_::
+
+* The **navbar** - as in _Our Travels_ page.
 
 * The **central part** - The header is centered at the top of the form. The form in both consists of providing the Username and the Password as well as _Submit_ button below the form.
 <br/>

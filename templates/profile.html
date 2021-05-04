@@ -14,7 +14,8 @@
 
 
   <div class="flexbox">
-      {% for place in destinations if session.user|lower == place.created_by|lower %}
+      {% for place in destinations %}
+      {% if session.user|lower == place.created_by|lower %}
       <div class="card hoverable">
           <div class="card-image waves-effect waves-block waves-light">
               <img src="{{ place.destination_image_url }}">
@@ -22,7 +23,7 @@
           <div class="card-content">
               <!-- City, Country -->
               <span class="center-align card-title activator grey-text text-darken-4"><strong>{{ place.city }}, {{ place.country }}</strong>
-                  <hr> <!-- Link to extra url -->
+                  <hr> <!-- Hide icon link to extra url if url empty -->
                   {% if place.extra_url|length > 0 %}
                   <a href="{{ place.extra_url }}" class="waves-effect waves-light extra-url-btn" target="_blank">
                       <i class="fas fa-link"></i>
@@ -36,6 +37,7 @@
                   <a href="{{ url_for('edit_destination', place_id=place._id) }}" class="waves-effect waves-light btn-small"><i class="fas fa-edit"></i>Edit</a>
                   <a href="{{ url_for('delete_destination', place_id=place._id) }}" class="waves-effect waves-light btn-small"><i class="fas fa-trash-alt left"></i>Delete</a>
               </div>
+
           </div>
           <div class="card-reveal">
               <!-- CLOSE description button, City, Country -->
@@ -51,6 +53,8 @@
 
           </div>
       </div>
+      {% endif %}
+
       {% endfor %}
   </div>
   {% endblock %}
