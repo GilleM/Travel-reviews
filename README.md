@@ -75,22 +75,35 @@ and how my project is the best way to help them achieve these things.
 <br/>
 <br/>
 
-##  Five Planes Method
+## Features
 ***
-## 1. Strategy
+
+This project is consisting of five main sections:
+
+- Our Travels
+- My Profile
+- My reviews
+- Log In 
+- Sign Up
+
+In order to descibe each one better, I decided to talk about Five Planes Method and to describe them better
+
+##  Five Planes Method
+
+### 1. Strategy
 
 The main goal of the website is to help tourists with the information about particular place. They can read other users' experience and leave theirs. All should be done in a friendly and interesting way so that even if a user is not travelling anywhere, they can read others experience if nothing then for fun.
 My personal goal, on the other hand, was to well understand the back-end logic, MongoDB, Flask as well as Python rules, so I could create the first blog.
 
 
-## 2. Scope
+### 2. Scope
 My goal in design was to make everything as structured and intuitive as possible. Register, log in, add/edit/delete your destination, read other users' destination, search for destination, log out. 
 I introduced social links that lead to random pages, as well as the link for the Terms and Conditions. 
 
 
-## 3. Structure
+### 3. Structure
 
-### _**Our Travels**_:
+#### _**Our Travels**_:
 
 * The  **navbar** is on the top, coloured in black. It is the same for all the pages. In the middle of it is the logo I created for Travel review purpose and on the right are categories: _Our Travels_, _My Profile_, _Add destination_ and _Log Out_. When not registered, _Log Out_ is not there, but _Log In_ and _Sign Up_ appear.
 
@@ -100,7 +113,7 @@ Below each image there is the link icon if the link is provided. Otherwise it is
 * **Footer** includes social links, a link for _Terms and Conditions_ with the text: _Website created by Matea Leka © 2021._
 
 
-### _**My Profile**_:
+#### _**My Profile**_:
 
 * The **navbar** - as in _Our Travels_ page.
 
@@ -108,7 +121,7 @@ Below each image there is the link icon if the link is provided. Otherwise it is
 
 * **Footer** - as in _Our Travels_ page.
 
-### _**Add destination**_:
+#### _**Add destination**_:
 
 * The **navbar** - as in _Our Travels_ page.
 
@@ -129,20 +142,18 @@ The form below is composed of the following fields:
 
 * **Footer** - as in _Our Travels_ page.
 
-### _**Log In**_ and ### _**Sign Up**_::
+#### _**Log In**_ and _**Sign Up**_:
 
 * The **navbar** - as in _Our Travels_ page.
 
-* The **central part** - The header is centered at the top of the form. The form in both consists of providing the Username and the Password as well as _Submit_ button below the form.
-<br/>
-On the _Sign Up_ page there is checkbox provided that the new user needs to agree on terms and conditions provided. They open on the new tab once clicked on. <br/> 
-The _Log In_ page has additional link under the form that leads to Register form if the user doesn't have an account.
+* The **central part** -  In the _Sign Up_ section user needs to provide the username and password and agree to terms and conditions of the webpage. In the _Log In_ page user should provide and valid username and password and it has the additional link under the form that leads to Register form if the user doesn't have an account. After log in, there is a profile page showing short info about the username.
+The header of both pages is centered at the top of the form. The form in both consists of providing the Username and the Password as well as _Submit_ button below the form.
 
 * **Footer** - as in _Our Travels_ page.
 
 
-## 4. Skeleton       
-### Wireframe
+### 4. Skeleton       
+#### Wireframes
 I used Balsamiq to develope the wireframes for mobile, tablet and laptop/desktop size. 
 
 You can check them by clicking on one of the following links:
@@ -159,12 +170,73 @@ FIX THE LINKS!!!, ADD WIREFRAMES
 
 + [Sign Up](https://gillem.github.io/Memory-game/assets/wireframes/wireframe_game_page.html)
 
-## 5. Surface
+### 5. Surface
 
 I wanted to have all the pages vivid and well organized, paying extra attention to responsiveness and margins. I tried to keep the same consistent colors, so black, dark purple and white with a bit of light green and occasional teal buttons (more about colours in Colours section). I kept the right contrast between background and text which makes it easy readable.
 
+#### Colour Scheme:
+
+The colours used for this project:
+
++ color: rgba(17, 9, 22, 0.911) for the background: <br/>
+![pic](wireframes/purple.JPG)
+
++ color: rgba(152, 247, 75, 0.922): <br/>
+![pic](wireframes/lime.JPG)
 
 
+
+#### Typography:
+
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
+#### Images:
+
+URL destinations photos are taken from the different sites.  taken from [Unsplash site](https://unsplash.com/):
+* [Dog wearing Superman costume](https://unsplash.com/photos/7-ToFEHzMNw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink) by Elias Castillo, 
+
+#### Other sources:
+* [Canva](https://www.canva.com/) used for a logo image
+
+![pic](wireframes/logo.png)
+
+
+
+### Consistent features across all pages:
+
+* The navbar always containing logo image and the links (that change depending if you're logged in or not)
+* The footer with social links and Terms and Conditions
+
+
+### Features left to implement
+
+* Introduce the comment section for destinations not necessarily added by the same user
+
+
+## Technologies Used
+
+The following technologies have been used in this project:
+
+* [Python 3.8.2](https://www.python.org/download/releases/3.0/) 
+    * Python is supposed to be the main hero of this project.
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+    * web framework written in Python.
+* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+    * is used as templating language for Python and its depending framework Flask
+* [MongoDB](https://www.mongodb.com/)
+    * It is a document-oriented database program.
+* [Heroku](https://heroku.com/)
+    * It is a cloud platform to run this python project.
+* [HTML](https://www.w3.org/TR/html52/) 
+    * used to structure and presenting the content.
+* [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+    * used for styling.
+* [JQuery](https://jquery.com/)
+    * this project used JavaScript in the form of JQuery to simplify DOM manipulation.
+* [Materialize 1.0.0](https://materializecss.com/)
+    * CSS framework used for structuring and presenting the content.
+* [FontAwesome](https://fontawesome.com/)
+    * used to create icons.
 
 
 
@@ -172,6 +244,7 @@ I wanted to have all the pages vivid and well organized, paying extra attention 
 
 
 ## Deployment
+***
 
 ### GitHub
 
