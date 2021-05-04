@@ -27,6 +27,7 @@ def get_destination():
     return render_template("destinations.html", destinations=destinations)
 
 
+
 # SEARCH
 @app.route("/search", methods=["GET", "POST"])
 def search():
@@ -89,12 +90,14 @@ def login():
 # PROFILE
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    destinations = mongo.db.destinations.find()
+
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("profile.html", username=username)
+        return render_template("profile.html", username=username, destinations=destinations)
 
     return redirect(url_for("login"))
 
