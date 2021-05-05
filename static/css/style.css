@@ -89,6 +89,19 @@ nav ul a {
     background-color: rgb(60, 43, 59)
 }
 
+/* SUBMIT buttons */
+.submit_button_color {
+    transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    background-color: rgb(55, 69, 115);
+}
+
+.submit_button_color:hover {
+    background-color: rgb(27, 35, 62);
+}
+
 /* SEARCH button */
 .search-button {
     transition: all .1s ease-in-out;
@@ -279,7 +292,6 @@ nav ul a {
     background-color: rgba(17, 9, 22, 0.911);
     background-image: none;
 }
-
 
 
 
