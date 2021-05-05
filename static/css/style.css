@@ -287,6 +287,10 @@ nav ul a {
     .card {
         width: 31%;
     }
+
+    .social-links-div {
+        margin-top: 25px;
+    }
 }
 
 
@@ -294,6 +298,10 @@ nav ul a {
 @media (max-width: 767px) and (min-width: 576px) {
     .card {
         width: 37%;
+    }
+
+    .social-links-div {
+        margin-top: 25px;
     }
 }
 
@@ -305,5 +313,9 @@ nav ul a {
 
     .search-panel {
         width: 300px;
+    }
+
+    .social-links-div {
+        margin-top: 25px;
     }
 }
