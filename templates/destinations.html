@@ -2,7 +2,7 @@
 {% block content %}
 
 <!-- search field -->
-<div class="row search-panel">
+<div class="row search-panel hide-on-small-only">
     <form action="{{ url_for('search') }}" method="post">
         <div class="row search-container valign-wrapper center-align">
             <div class="input-field col s7 m7">
@@ -11,6 +11,30 @@
                 <label for="query">Search destination</label>
             </div>
             <div class="col s5 m5">
+                <a href="{{ url_for('get_destination') }}" class="waves-effect waves-light btn reset-button">Reset</a>
+                <button type="submit" class="waves-effect waves-light btn search-button">
+                    <i class="fas fa-search left"></i> Search
+                </button>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+
+<!-- show just on mobile device -->
+<div class="row search-panel hide-on-med-and-up	hide-on-large-only">
+    <form action="{{ url_for('search') }}" method="post">
+        <div class="row search-container valign-wrapper center-align">
+            <div class="input-field col s12 m12">
+                <i class="fas fa-search prefix deep-purple-text accent-1"></i>
+                <input type="text" name="query" id="query" minlength="3" class="validate validate_input" required>
+                <label for="query">Search destination</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <!-- reset button -->
                 <a href="{{ url_for('get_destination') }}" class="waves-effect waves-light btn reset-button">Reset</a>
                 <button type="submit" class="waves-effect waves-light btn search-button">
                     <i class="fas fa-search left"></i> Search

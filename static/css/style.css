@@ -318,4 +318,8 @@ nav ul a {
     .social-links-div {
         margin-top: 25px;
     }
+
+    .search-panel {
+        border-radius: 10px;
+    }
 }
