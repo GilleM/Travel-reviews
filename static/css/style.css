@@ -200,9 +200,9 @@ nav ul a {
 
 /* Social Links */
 .social-links li a i {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: rgba(151, 151, 151, 0.761);
-    padding: 10px;
+    padding: 5px;
     transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
@@ -213,7 +213,37 @@ nav ul a {
     color: rgba(152, 247, 76, 0.922);
 }
 
-/* ==== Terms and Conditions ==== */
+.display-inline {
+    display: inline;
+}
+
+/* Travel review header */
+.travel-review-site-header {
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.travel-review-site-header:hover {
+    color: rgba(152, 247, 76, 0.922);
+}
+
+/* Terms and condition footer link */
+
+.terms-and-conditions-footer {
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    color: rgba(151, 151, 151, 0.761);
+}
+
+.terms-and-conditions-footer:hover {
+    color: rgba(152, 247, 76, 0.922);
+}
+
+/* ==== Terms and Conditions page ==== */
 .terms_and_condition_text {
     color: rgb(162 162 162 / 82%);
 }
@@ -276,3 +306,4 @@ nav ul a {
     .search-panel {
         width: 300px;
     }
+}
