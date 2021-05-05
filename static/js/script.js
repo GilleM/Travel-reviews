@@ -8,12 +8,10 @@ $(document).ready(function() {
     function validateMaterializeSelect() {
         let classValid = {
             "border-bottom": "1px solid #4caf50",
-            "box-shadow": "0 1px 0 0 #4caf50",
             "color": red
         };
         let classInvalid = {
             "border-bottom": "1px solid #3c3c3c",
-            "box-shadow": "0 1px 0 0 #292929"
             "color": red
         };
         if ($("select.validate").prop("required")) {

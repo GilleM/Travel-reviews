@@ -120,6 +120,16 @@ nav ul a {
 }
 
 /* ==== PROFILE PAGE ==== */
+
+.add-destination-button {
+    background-color: rgba(35, 35, 35, 0.918);
+}
+
+.add-destination-button:hover {
+    background-color: rgba(0, 0, 0, 0.918);
+    ;
+}
+
 .profile-card-panel {
     background-color: rgba(109, 109, 109, 0.231);
     border: none;
@@ -223,3 +233,46 @@ nav ul a {
     background-color: rgba(17, 9, 22, 0.911);
     background-image: none;
 }
+
+
+
+
+
+
+/* ==== MEDIA QUERIES ==== */
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1200px) and (min-width: 992px) {
+    nav ul a {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 28%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 991px) and (min-width: 768px) {
+    .card {
+        width: 31%;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) and (min-width: 576px) {
+    .card {
+        width: 37%;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    .card {
+        width: 75%;
+    }
+
+    .search-panel {
+        width: 300px;
+    }
