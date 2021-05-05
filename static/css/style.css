@@ -141,6 +141,22 @@ nav ul a {
     font-size: 2.2rem;
 }
 
+.edit-button {
+    background-color: rgb(206, 188, 59);
+}
+
+.edit-button:hover {
+    background-color: rgb(122, 111, 21);
+}
+
+.delete-button {
+    background-color: rgb(80, 80, 80);
+}
+
+.delete-button:hover {
+    background-color: rgb(53, 52, 52);
+}
+
 /* images */
 .card .card-image img {
     height: 200px;

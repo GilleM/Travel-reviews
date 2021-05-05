@@ -46,19 +46,19 @@
             <!-- Travel period -->
             <div class="input-field col s12">
                 <i class="fas fa-table prefix"></i>
-                <input id="due_date" name="due_date" type="date" class="validate">
+                <input id="due_date" name="due_date" type="text" class="datepicker validate">
                 <label for="due_date">When did you visit the place?</label>
                 <span class="helper-text" data-error data-success>Optional</span>
             </div>
             <!-- Destination image url link -->
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6">
                 <i class="far fa-image prefix"></i>
                 <input id="destination_image_url" name="destination_image_url" type="text" class="validate" minlength="5" maxlength="150" pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\%$&'\(\)\*\+,;=.]+$" required>
                 <label for="destination_image_url">Destination Cover Image Link</label>
                 <span class="helper-text" data-error="Please insert Valid URL Link">Valid URL Link</span>
             </div>
             <!-- Extra url link -->
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6">
                 <i class="fas fa-link prefix"></i>
                 <input id="extra_url" name="extra_url" type="text" class="validate" minlength="5" maxlength="150" pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$">
                 <label for="extra_url">Extra URL link, if any</label>
@@ -66,7 +66,7 @@
             </div>
             <!-- Submit button -->
             <div class="row">
-                <button type="submit" class="col s2 m2 offset-m5 waves-effect waves-light btn submit_button_color">
+                <button type="submit" class="col s4 offset-s4 m2 offset-m5 waves-effect waves-light btn submit_button_color">
                     SUBMIT <i class="fas fa-sign-in-alt"></i>
                 </button>
             </div>
