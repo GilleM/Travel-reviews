@@ -1,8 +1,8 @@
-# TRAVEL REVIEW PROJECT
+# Travel Reviews
 
-**Code Institute - Milestone Project for Data Centric Development**
+**Code Institute - Third Milestone Project for  Data Centric Development**
 
-![pic](wireframes/proba.jpg)
+![pic](static/images/mockup-readme.png)
 
 Welcome to my third Code Institute milestone project that you can check out by clicking on [here](https://travel-reviews-project.herokuapp.com/)
 
@@ -160,15 +160,15 @@ You can check them by clicking on one of the following links:
 
 FIX THE LINKS!!!, ADD WIREFRAMES
 
-+ [Our Travels Page](https://gillem.github.io/Travel.reviews/wireframes/wireframe_our_travels.html)
++ [Our Travels Page](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/Add_destination.pdf)
 
-+ [My Profile](https://gillem.github.io/Memory-game/assets/wireframes/wireframe_game_page.html)
++ [My Profile](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/My_profile.pdf)
 
-+ [Add destination](https://gillem.github.io/Memory-game/assets/wireframes/wireframe_game_page.html)
++ [Add destination](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/Add_destination.pdf)
 
-+ [Log In](https://gillem.github.io/Memory-game/assets/wireframes/wireframe_game_page.html)
++ [Log In](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/Log_in.pdf)
 
-+ [Sign Up](https://gillem.github.io/Memory-game/assets/wireframes/wireframe_game_page.html)
++ [Sign Up](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/Sign_up.pdf)
 
 ### 5. Surface
 
