@@ -116,6 +116,8 @@ nav ul a {
     background-color: rgba(55, 99, 20, 0.922);
 }
 
+
+
 /* ===== Page title ===== */
 .page_title {
     color: rgb(255, 255, 255);
@@ -349,5 +351,9 @@ nav ul a {
 
     .search-panel {
         border-radius: 10px;
+    }
+
+    .cancel-button {
+    margin-bottom: 5px;
     }
 }

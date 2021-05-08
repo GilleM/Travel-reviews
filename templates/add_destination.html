@@ -9,14 +9,14 @@
     <form class="col s10 offset-s1" method="POST" action="{{ url_for('add_destination') }}">
         <div class="row card-panel">
             <!-- city -->
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6">
                 <i class="fas fa-city prefix"></i>
                 <input id="city" name="city" type="text" minlength="3" class="validate" required>
                 <label for="city">City</label>
                 <span class="helper-text" data-error="Please write the name of the city"></span>
             </div>
             <!-- country -->
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6">
                 <i class="fas fa-globe-europe prefix"></i>
                 <input id="country" name="country" type="text" minlength="2" class="validate" required>
                 <label for="country">Country</label>
