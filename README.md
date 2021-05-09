@@ -26,10 +26,14 @@ Welcome to my third Code Institute milestone project that you can check out by c
             - 3.1.3.2. [My Profile](#my-profile)<br/>
             - 3.1.3.3. [Add destination](#add_destination)<br/>
             - 3.1.3.4. [Log In and Sign Up](#log-in-and-sign-up)<br/>
-        - 3.1.4. [Skeleteon](#skeleton)<br/>
+        - 3.1.4. [Skeleton](#skeleton)<br/>
             - 3.1.4.1. [Wireframes](#wireframes)<br/>
         - 3.1.5. [Surface](#surface)<br/>
-    - 2.3. [Add destination](#add-destination)<br/>
+            - 3.1.5.1. [Colour Scheme](#colour-scheme)<br/>
+            - 3.1.5.2. [Typography](#typography)<br/>
+            - 3.1.5.3. [Images](#images)<br/>
+    - 3.2. [Consistent features across all pages](#consistent-features-across-all-pages)<br/>
+    - 3.3. [Features left to implement](#features-left-to-implement)<br/>
 3. [Technologies Used](#technologies-used)<br/>
 4. [Database architecture](#database-architecture)<br/>
 5. [Testing](#testing)<br/>
@@ -58,7 +62,6 @@ The choice of this subject was pretty easy; lots of people like to travel and ar
 
 
 ## UX
-
 ***
 
 In this paragraph I'm about to provide insight into my UX process, 
@@ -83,9 +86,7 @@ and how my project is the best way to help them achieve these things.
 ### User Stories
 
 - as travel lover, I'd like to read other people's experience and leave mine,
-- as a new user, I'd like the page to have easy to follow and understandable, not to complex UX
-<br/>
-<br/>
+- as a new user, I'd like the page to have easy to follow and understandable, not to complex UX <br/> <br/>
 
 ## Features
 ***
@@ -102,38 +103,38 @@ In order to descibe each one better, I decided to talk about Five Planes Method 
 
 ##  Five Planes Method
 
-### 1. Strategy
+### Strategy
 
 The main goal of the website is to help tourists with the information about particular place. They can read other users' experience and leave theirs. All should be done in a friendly and interesting way so that even if a user is not travelling anywhere, they can read others experience if nothing then for fun.
-My personal goal, on the other hand, was to well understand the back-end logic, MongoDB, Flask as well as Python rules, so I could create the first blog.
+My personal goal, on the other hand, was to well understand the back-end logic, MongoDB, Flask as well as Python rules, so I could create the first blog. <br/><br/>
 
 
-### 2. Scope
+### Scope
 My goal in design was to make everything as structured and intuitive as possible. Register, log in, add/edit/delete your destination, read other users' destination, search for destination, log out. 
-I introduced social links that lead to random pages, as well as the link for the Terms and Conditions. 
+I introduced social links that lead to random pages, as well as the link for the Terms and Conditions. <br/><br/>
 
 
-### 3. Structure
+### Structure
 
-#### _**Our Travels**_:
+#### Our Travels
 
 * The  **navbar** is on the top, coloured in black. It is the same for all the pages. In the middle of it is the logo I created for Travel review purpose and on the right are categories: _Our Travels_, _My Profile_, _Add destination_ and _Log Out_. When not registered, _Log Out_ is not there, but _Log In_ and _Sign Up_ appear.
 
 * The **central part** is composed of the search field that is centered above the flexbox section of Materialize's Card Reveal. Those cards have image and name of the destination and it reveals more information of the travel once button is clicked. They are nicely distributed and easy to use.
 Below each image there is the link icon if the link is provided. Otherwise it is not visible. Next to it is abovementioned button that reveals the information about the destinations (the categories are listed in the central part of the _Add destination_ category).
 
-* **Footer** includes social links, a link for _Terms and Conditions_ with the text: _Website created by Matea Leka © 2021._
+* **Footer** includes social links, a link for _Terms and Conditions_ with the text: _Website created by Matea Leka © 2021._ <br/><br/>
 
 
-#### _**My Profile**_:
+#### My Profile
 
 * The **navbar** - as in _Our Travels_ page.
 
 * The **central part** has the user profile name. Below we can see the Materialize cards done only by the logged in User and also distributed in flex. This time they can be Edited and Deleted.
 
-* **Footer** - as in _Our Travels_ page.
+* **Footer** - as in _Our Travels_ page. <br/><br/>
 
-#### _**Add destination**_:
+#### Add destination
 
 * The **navbar** - as in _Our Travels_ page.
 
@@ -150,41 +151,39 @@ The form below is composed of the following fields:
     - Extra link, if any 
 <br/>
 
+* **Footer** - as in _Our Travels_ page. <br/><br/>
 
-
-* **Footer** - as in _Our Travels_ page.
-
-#### _**Log In**_ and _**Sign Up**_:
+#### Log In and Sign Up
 
 * The **navbar** - as in _Our Travels_ page.
 
 * The **central part** -  In the _Sign Up_ section user needs to provide the username and password and agree to terms and conditions of the webpage. In the _Log In_ page user should provide and valid username and password and it has the additional link under the form that leads to Register form if the user doesn't have an account. After log in, there is a profile page showing short info about the username.
 The header of both pages is centered at the top of the form. The form in both consists of providing the Username and the Password as well as _Submit_ button below the form.
 
-* **Footer** - as in _Our Travels_ page.
+* **Footer** - as in _Our Travels_ page. <br/><br/>
 
 
-### 4. Skeleton       
+### Skeleton       
 #### Wireframes
 I used Balsamiq to develope the wireframes for mobile, tablet and laptop/desktop size. 
 
 You can check them by clicking on one of the following links:
 
-+ [Our Travels Page](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/Add_destination.pdf)
++ [Our Travels Page](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/wireframe_our_travels.pdf)
 
-+ [My Profile](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/My_profile.pdf)
++ [My Profile](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/wireframe_my_profile.pdf)
 
-+ [Add destination](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/Add_destination.pdf)
++ [Add destination](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/wireframe_add_destination.pdf)
 
-+ [Log In](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/Log_in.pdf)
++ [Log In](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/wireframe_log_in.pdf)
 
-+ [Sign Up](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/Sign_up.pdf)
++ [Sign Up](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/wireframe_sign_up.pdf) <br/><br/>
 
-### 5. Surface
+### Surface
 
-I wanted to have all the pages vivid and well organized, paying extra attention to responsiveness and margins. I tried to keep the same consistent colors, so black, dark purple and white with a bit of light green and occasional teal buttons (more about colours in Colours section). I kept the right contrast between background and text which makes it easy readable.
+I wanted to have all the pages vivid and well organized, paying extra attention to responsiveness and margins. I tried to keep the same consistent colors, so black, dark purple and white with a bit of light green and occasional teal buttons (more about colours in Colours section). I kept the right contrast between background and text which makes it easy readable. <br/><br/>
 
-#### Colour Scheme:
+#### Colour Scheme
 
 
 The patterns used for this project are taken from [Hero Patterns](https://www.heropatterns.com/) page. 
@@ -206,34 +205,31 @@ The patterns used for this project are taken from [Hero Patterns](https://www.he
 ![pic](wireframes/bg_photo_3.JPG)
 
 
-#### Typography:
+#### Typography
 
 font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 
-#### Images:
+#### Images
 
-URL destinations photos are taken from the different sites.  taken from [Unsplash site](https://unsplash.com/):
-* [Dog wearing Superman costume](https://unsplash.com/photos/7-ToFEHzMNw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink) by Elias Castillo, 
-
-#### Other sources:
-* [Canva](https://www.canva.com/) used for a logo image
+-  [Canva](https://www.canva.com/) used for a logo image
 
 ![pic](wireframes/logo.png)
 
 
 
-### Consistent features across all pages:
+### Consistent features across all pages
 
 * The navbar always containing logo image and the links (that change depending if you're logged in or not)
-* The footer with social links and Terms and Conditions
+* The footer with social links and Terms and Conditions <br/><br/>
 
 
 ### Features left to implement
 
-* Introduce the comment section for destinations not necessarily added by the same user
+* Introduce the comment section for destinations not necessarily added by the same user. <br/><br/>
 
 
 ## Technologies Used
+***
 
 The following technologies have been used in this project:
 
@@ -256,24 +252,95 @@ The following technologies have been used in this project:
 * [Materialize 1.0.0](https://materializecss.com/)
     * CSS framework used for structuring and presenting the content.
 * [FontAwesome](https://fontawesome.com/)
-    * used to create icons.
+    * used to create icons. <br/><br/>
 
 
 ## Database architecture
+***
 
 This project has two main collections in the database: destinations and users. The database structure in MongoDB has been set as follow:
 
-![pic](wireframes/database_representation.JPG)
+![pic](wireframes/database_representation.JPG) <br/><br/>
 
 
 ## Testing
+***
 
 ### Making a shared destination reviews:
 
-In this app user can create reviews of their favorite destinations that he had visited and share it with others. They can edit and delete their reviews and read others people reviews. Like this, people can get more infos about the destinations they would like to go, or they can just read other people's experience.
+In this app user can create reviews of their favorite destinations that they had visited and share it with others. They can edit and delete their reviews and read others people reviews. Like this, by reading other people's experience, users can get more infos about the destinations they would like to go. 
 
-This was achieved with following sections:
+This was achieved with following sections: <br/><br/>
 
+#### Create a user account
+
+
+By clicking _Sign Up_, user can create an account by provide a valid/unique username and password and agree to the standard term and conditions provided with the webpage.
+
+![pic](testing/sign_in_user.png)
+![pic](testing/sign_in_terms_and_conditions.png)
+
+ After signing up is done, the user is directed to their profile page which user profile can be seen on the page. 
+
+ ![pic](testing/registration_successful.JPG)
+
+Once sing out, you should log in with the correct Username and Password.
+ ![pic](testing/log_in_incorrect.JPG) <br/><br/>
+
+
+
+#### User personal destination reviews
+
+In this section, the user can write travel reviews and add them to their collections. 
+The user needs to provide a valid city, country, travel description, best memory, advice to others, URL image of the destination and another URL if they have any.
+Beneath the form, there's a button "Submit".
+
+ ![pic](testing/submit_destination.png)
+
+
+After submission, a flash message appears with the saying “New Place Successfully Added”.
+ ![pic](testing/new_place_successfully_added.JPG)
+
+<br/>
+The new destination appears both: <br/>
+
+- in _Our travels_ page, without possibility to edit/delete destination
+
+- in _My Profile_ page with the possibility to edit destination or to simply remove it from the database.
+
+ ![pic](testing/added_destination_to_the_profile.png)
+
+ In both example we can see the visible link icon if the extra link was provided at the time of adding (or editing) destination. Otherwise is hidden.
+ 
+ By clicking on the _"Travel description"_ button, a card reveals with all the information that users provided for the pecific destination.
+  ![pic](testing/added_revealed_destination.png)
+
+The username of the user who added the destination is added at the end of the card.
+![pic](testing/created_by.JPG)
+
+After deleting the destination, we can see it dissappears from our profile and the flash message informs us about how destination was deleted.
+
+![pic](testing/destination_deleted_from_my_profile.JPG)
+![pic](testing/destination_successfully_deleted.JPG) <br/><br/>
+
+
+#### Our Travels home page
+
+_Our Travels_ home page is the central page of the project. All the destinations user ever added will appear on this page. There's no possibility to edit or delete anyone's destination and you can edit/delete yours just from _My Profile_ page. 
+
+At the top of the page, just below navbar, we can see search section.
+ ![pic](testing/search_section.JPG)
+
+Below it, there's a flexbox of cards among which you can see **Cork, Ireland** destination from the previous example added to the main page.
+ ![pic](testing/added_destination_list.png) <br/><br/>
+
+
+#### Search in the destinations
+
+You can search destinations by the city name or country.
+Below you can see the the example of all the destinations with the country name "France".
+
+ ![pic](testing/search_by_country.png) <br/><br/>
 
 
 
