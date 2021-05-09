@@ -24,12 +24,11 @@
             </div>
             <!-- travel description -->
             <div class="input-field col s12">
-                <i class="fas fa-pencil-alt prefix"></i>
-                <input id="travel_description" name="travel_description" minlength="10" type="text" class="validate" required>
+                <i class="fas fa-align-left prefix"></i>
+                <textarea id="travel_description" name="travel_description" class="validate materialize-textarea" minlength="1" maxlength="350" pattern="^[a-zA-Z0-9_. ]{1,350}$" required></textarea> <span class="helper-text" data-error="Please write min 10 characters"></span>
                 <label for="travel_description">Travel description</label>
-                <span class="helper-text" data-error="Please write min 10 characters"></span>
             </div>
-            <!-- best memory -->
+            <!-- Best memory -->
             <div class="input-field col s12">
                 <i class="fas fa-kiss-beam prefix"></i>
                 <input id="best_memory" name="best_memory" type="text" minlength="10" class="validate" required>

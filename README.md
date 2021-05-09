@@ -2,7 +2,7 @@
 
 **Code Institute - Third Milestone Project for  Data Centric Development**
 
-![pic](static/images/mockup-readme.png)
+![pic](wireframes/mockup-readme.png)
 
 Welcome to my third Code Institute milestone project that you can check out by clicking on [here](https://travel-reviews-project.herokuapp.com/)
 
@@ -13,11 +13,28 @@ Welcome to my third Code Institute milestone project that you can check out by c
 ## Table of Contents - update them when you finish the sections!!!
 ***
 
-1. [UX](#ux)<br/>
-2. [Features](#features)<br/>
-    - 2.1. [Our travels](#our-travels)<br/>
-    - 2.2. [My reviews](#my-reviews)<br/>
+1. [Project Description](#project-description)
+2. [UX](#ux)<br/>
+    - 2.1. [Project Goals](#project-goals)<br/>
+    - 2.2. [User Stories](#user-stories)<br/>
+
+3. [Features](#features)<br/>
+    - 3.1. [Five Planes Method](#five-planes-method)<br/>
+        - 3.1.1. [Strategy](#Strategy)<br/>
+        - 3.1.2. [Scope](#scope)<br/>
+        - 3.1.3. [Structure](#structure)<br/>
+            - 3.1.3.1. [Our Travels](#our-travels)<br/>
+            - 3.1.3.2. [My Profile](#my-profile)<br/>
+            - 3.1.3.3. [Add destination](#add_destination)<br/>
+            - 3.1.3.4. [Log In and Sign Up](#log-in-and-sign-up)<br/>
+        - 3.1.4. [Skeleteon](#skeleton)<br/>
+            - 3.1.4.1. [Wireframes](#wireframes)<br/>
+
+        - 3.1.5. [Surface](#surface)<br/>
+
     - 2.3. [Add destination](#add-destination)<br/>
+
+
 3. [Technologies Used](#technologies-used)<br/>
 4. [Database architecture](#database-architecture)<br/>
 5. [Testing](#testing)<br/>
@@ -158,8 +175,6 @@ I used Balsamiq to develope the wireframes for mobile, tablet and laptop/desktop
 
 You can check them by clicking on one of the following links:
 
-FIX THE LINKS!!!, ADD WIREFRAMES
-
 + [Our Travels Page](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/Add_destination.pdf)
 
 + [My Profile](https://github.com/GilleM/Travel-reviews/blob/master/wireframes/My_profile.pdf)
@@ -176,14 +191,24 @@ I wanted to have all the pages vivid and well organized, paying extra attention 
 
 #### Colour Scheme:
 
-The colours used for this project:
 
-+ color: rgba(17, 9, 22, 0.911) for the background: <br/>
-![pic](wireframes/purple.JPG)
+The patterns used for this project are taken from [Hero Patterns](https://www.heropatterns.com/) page. 
 
-+ color: rgba(152, 247, 75, 0.922): <br/>
-![pic](wireframes/lime.JPG)
 
++ color: #110916;
++ pattern: Topography
+
+![pic](wireframes/bg_photo_1.JPG)
+
+
++ color:  #134606;
++ pattern: Topography
+
+![pic](wireframes/bg_photo_2.JPG)
+
++ color: #110916e8;
+
+![pic](wireframes/bg_photo_3.JPG)
 
 
 #### Typography:
