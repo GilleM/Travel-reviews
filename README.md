@@ -17,10 +17,9 @@ Welcome to my third Code Institute milestone project that you can check out by c
 2. [UX](#ux)<br/>
     - 2.1. [Project Goals](#project-goals)<br/>
     - 2.2. [User Stories](#user-stories)<br/>
-
 3. [Features](#features)<br/>
     - 3.1. [Five Planes Method](#five-planes-method)<br/>
-        - 3.1.1. [Strategy](#Strategy)<br/>
+        - 3.1.1. [Strategy](#strategy)<br/>
         - 3.1.2. [Scope](#scope)<br/>
         - 3.1.3. [Structure](#structure)<br/>
             - 3.1.3.1. [Our Travels](#our-travels)<br/>
@@ -29,18 +28,14 @@ Welcome to my third Code Institute milestone project that you can check out by c
             - 3.1.3.4. [Log In and Sign Up](#log-in-and-sign-up)<br/>
         - 3.1.4. [Skeleteon](#skeleton)<br/>
             - 3.1.4.1. [Wireframes](#wireframes)<br/>
-
         - 3.1.5. [Surface](#surface)<br/>
-
     - 2.3. [Add destination](#add-destination)<br/>
-
-
 3. [Technologies Used](#technologies-used)<br/>
 4. [Database architecture](#database-architecture)<br/>
 5. [Testing](#testing)<br/>
-    - 5.1. [Making a shared destination library](#making-a-shared-destination-library)<br/>
+    - 5.1. [Making a shared destination reviews](#making-a-shared-destination-reviews)<br/>
         - 5.1.1. [Create a user account](#create-a-user-account)<br/>
-        - 5.1.2. [User personal destination library](#user-personal-book-library)<br/>
+        - 5.1.2. [User personal destination reviews](#user-personal-destination-reviews)<br/>
         - 5.1.3. [Our travels home page](#our-travels-home-page)<br/>
         - 5.1.4. [Search in the destinations](#search-in-the-destinations)<br/>
     - 5.2. [The website validation](#the-website-validation)<br/>
@@ -264,6 +259,20 @@ The following technologies have been used in this project:
     * used to create icons.
 
 
+## Database architecture
+
+This project has two main collections in the database: destinations and users. The database structure in MongoDB has been set as follow:
+
+![pic](wireframes/database_representation.JPG)
+
+
+## Testing
+
+### Making a shared destination reviews:
+
+In this app user can create reviews of their favorite destinations that he had visited and share it with others. They can edit and delete their reviews and read others people reviews. Like this, people can get more infos about the destinations they would like to go, or they can just read other people's experience.
+
+This was achieved with following sections:
 
 
 
