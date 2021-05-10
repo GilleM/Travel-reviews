@@ -31,7 +31,6 @@ Welcome to my third Code Institute milestone project that you can check out by c
         - 3.1.5. [Surface](#surface)<br/>
             - 3.1.5.1. [Colour Scheme](#colour-scheme)<br/>
             - 3.1.5.2. [Typography](#typography)<br/>
-            - 3.1.5.3. [Images](#images)<br/>
     - 3.2. [Consistent features across all pages](#consistent-features-across-all-pages)<br/>
     - 3.3. [Features left to implement](#features-left-to-implement)<br/>
 3. [Technologies Used](#technologies-used)<br/>
@@ -55,10 +54,9 @@ Welcome to my third Code Institute milestone project that you can check out by c
 
 ## Project Description
 ***
-**Travel Review Project** is one of the milestone projects I did at the Code Institute Full Stack Developer course. The main requirements were to make a MongoDB-backed Flask project for a web application that allows users to store and manipulate data records about a particular domain. We needed to respect CRUD functionality and to design a database structure that would suit well for required domain.
+**Travel Review Project** is one of the milestone projects I did at the Code Institute Full Stack Developer course. The main requirements were to make a MongoDB-backed Flask project for a web application that allows users to store and manipulate data records about a particular domain. We needed to respect CRUD functionality and to design a database structure that would suit well for the required domain.
 
-I decided to design Travel review site. The site requires registration. Once registered, you can leave your own review, tell the reasons behind your travels and give travel advice to others. Even more, you can search for a specific destination and read other people's added destination(s). After leaving yours, you can edit or delete it. 
-The choice of this subject was pretty easy; lots of people like to travel and are willing to listen to other people's experience. 
+I decided to design a Travel review site. The site requires registration. Once registered, you can leave your own review, tell the purpose of your travels and give travel advice to others. Additionally, you can search for a specific destination and read other people's added destinations. After leaving yours, you can edit or delete it. The choice of this subject was pretty easy: lots of people like to travel and are want to read about other people's experiences.
 
 
 ## UX
@@ -75,23 +73,23 @@ and how my project is the best way to help them achieve these things.
 - to make a page with interface design, providing a logical structure which is easy to follow,
 - to make a MongoDB-backed Flask project for a web application that allows users to store and manipulate data records,
 - to respect CRUD functionality so users can create, read, edit and delete the contents they wrote,
-- to include "Search field" so users can get familiar with the destinations they would like to go,
+- to include a "Search field" so users can get familiar with the destinations they would like to go to,
 - to write interactive JavaScript code so it can help with more intuitive UX (e.g. navbar on mobile devices)
-- generally, to make an interesting and usefull backend web page that can help travellers to describe their experience and read the others' in order to get more information
+- generally, to make an interesting and usefull backend web page that can help travellers to describe their experience and read others' in order to get more information
 
-### The business goals of this website is:
+### The business goal of this website is:
 
-- the page could possibly be part of some tourist agency's website that could draw peoples' attention on travelling and participating with the travel's community 
+- to be part of a tourist agency's website that could draw peoples' attention to travelling and participating with the travel's community
 
 ### User Stories
 
-- as travel lover, I'd like to read other people's experience and leave mine,
-- as a new user, I'd like the page to have easy to follow and understandable, not to complex UX <br/> <br/>
+- as a travel lover, I'd like to read other people's experience and leave mine,
+- as a new user, I'd like the page to have easy to follow, understandable, uncomplicated UX <br/> <br/>
 
 ## Features
 ***
 
-This project is consisting of five main sections:
+This project consists of five main sections:
 
 - Our Travels
 - My Profile
@@ -99,14 +97,12 @@ This project is consisting of five main sections:
 - Log In 
 - Sign Up
 
-In order to descibe each one better, I decided to talk about Five Planes Method and to describe them better
 
 ##  Five Planes Method
 
 ### Strategy
 
-The main goal of the website is to help tourists with the information about particular place. They can read other users' experience and leave theirs. All should be done in a friendly and interesting way so that even if a user is not travelling anywhere, they can read others experience if nothing then for fun.
-My personal goal, on the other hand, was to well understand the back-end logic, MongoDB, Flask as well as Python rules, so I could create the first blog. <br/><br/>
+The main goal of the website is to help tourists with information about a particular place. They can read other users' experience and leave theirs. All should be done in a friendly and interesting way so that even if a user is not travelling anywhere, they can read others’ experience if for nothing other than for fun. My personal goal, on the other hand, was to understand back-end logic, MongoDB, Flask as well as Python rules, so I could create the first blog. <br/><br/>
 
 
 ### Scope
@@ -118,10 +114,10 @@ I introduced social links that lead to random pages, as well as the link for the
 
 #### Our Travels
 
-* The  **navbar** is on the top, coloured in black. It is the same for all the pages. In the middle of it is the logo I created for Travel review purpose and on the right are categories: _Our Travels_, _My Profile_, _Add destination_ and _Log Out_. When not registered, _Log Out_ is not there, but _Log In_ and _Sign Up_ appear.
+* The **navbar** is on the top, coloured in black. It is the same for all the pages. In the middle of it is the logo I created for the purpose of travel review and on the right are categories: _Our Travels_, _My Profile_, _Add destination_ and _Log Out_. When not registered, _Log Out_ is not there. Instead, _Log In_ and _Sign Up_ appear.
 
-* The **central part** is composed of the search field that is centered above the flexbox section of Materialize's Card Reveal. Those cards have image and name of the destination and it reveals more information of the travel once button is clicked. They are nicely distributed and easy to use.
-Below each image there is the link icon if the link is provided. Otherwise it is not visible. Next to it is abovementioned button that reveals the information about the destinations (the categories are listed in the central part of the _Add destination_ category).
+* The **central part** is composed of the search field that is centred above the flexbox section of Materialize's Card Reveal. Those cards have the image and name of the destination and it reveals more information of the travel once the button is clicked. They are nicely distributed and easy to use. Below each image there is the link icon if the link is provided. Otherwise it is not visible. Next to it is the button mentioned above that reveals the information about the destinations (the categories are listed in the central part of the _Add destination_ category).
+
 
 * **Footer** includes social links, a link for _Terms and Conditions_ with the text: _Website created by Matea Leka © 2021._ <br/><br/>
 
@@ -138,7 +134,7 @@ Below each image there is the link icon if the link is provided. Otherwise it is
 
 * The **navbar** - as in _Our Travels_ page.
 
-* The **central part** - Above the form container there's centered "Add destination" header. <br/> Left to each field listed below there's an icon.
+* The **central part** - Above the form container is centered the "Add destination" header. <br/> Left to each field listed below there's an icon.
 Below the form is a _Submit_ button. <br/>
 The form below is composed of the following fields:
     - City
@@ -157,8 +153,7 @@ The form below is composed of the following fields:
 
 * The **navbar** - as in _Our Travels_ page.
 
-* The **central part** -  In the _Sign Up_ section user needs to provide the username and password and agree to terms and conditions of the webpage. In the _Log In_ page user should provide and valid username and password and it has the additional link under the form that leads to Register form if the user doesn't have an account. After log in, there is a profile page showing short info about the username.
-The header of both pages is centered at the top of the form. The form in both consists of providing the Username and the Password as well as _Submit_ button below the form.
+* The **central part** -  In the _Sign Up_ section the user needs to provide the username and password and agree to the terms and conditions of the webpage. In the _Log In_ page the user should provide a valid username and password and it has the additional link under the form that leads to a Register form if the user doesn't have an account. After log in, there is a profile page showing short info about the username. The header of both pages is centred at the top of the form. The form in both consists of providing the Username and the Password as well as _Submit_ button below the form.
 
 * **Footer** - as in _Our Travels_ page. <br/><br/>
 
@@ -181,7 +176,7 @@ You can check them by clicking on one of the following links:
 
 ### Surface
 
-I wanted to have all the pages vivid and well organized, paying extra attention to responsiveness and margins. I tried to keep the same consistent colors, so black, dark purple and white with a bit of light green and occasional teal buttons (more about colours in Colours section). I kept the right contrast between background and text which makes it easy readable. <br/><br/>
+I wanted to have all the pages vivid and well organised, paying extra attention to responsiveness and margins. I tried to keep the same consistent colours, so black, dark purple and white with a bit of light green and occasional teal buttons (more about colours in the Colours section). I kept the right contrast between background and text which makes it easy readable. <br/><br/>
 
 #### Colour Scheme
 
@@ -210,17 +205,10 @@ The patterns used for this project are taken from [Hero Patterns](https://www.he
 
 font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 
-#### Images
-
--  [Canva](https://www.canva.com/) used for a logo image
-
-![pic](wireframes/logo.png)
-
-
 
 ### Consistent features across all pages
 
-* The navbar always containing logo image and the links (that change depending if you're logged in or not)
+* The navbar always contains the logo image and the links (that change depending if you're logged in or not)
 * The footer with social links and Terms and Conditions <br/><br/>
 
 
@@ -269,19 +257,19 @@ This project has two main collections in the database: destinations and users. T
 
 ### Making a shared destination reviews
 
-In this app user can create reviews of their favorite destinations that they had visited and share it with others. They can edit and delete their reviews and read others people reviews. Like this, by reading other people's experience, users can get more infos about the destinations they would like to go. 
+In this app user can create reviews of their favorite destinations that they had visited and share it with others. They can edit and delete their reviews and read others people reviews. Like this, by reading about other people's experiences, users can get more information about the destinations they would like to go to.
 
-This was achieved with following sections: <br/><br/>
+This was achieved with the following sections: <br/><br/>
 
 #### Create a user account
 
 
-By clicking _Sign Up_, user can create an account by provide a valid/unique username and password and agree to the standard term and conditions provided with the webpage.
+By clicking _Sign Up_, the user can create an account by providing a valid/unique username and password and agree to the standard term and conditions provided with the webpage.
 
 ![pic](testing/sign_in_user.png)
 ![pic](testing/sign_in_terms_and_conditions.png)
 
- After signing up is done, the user is directed to their profile page which user profile can be seen on the page. 
+Once signed out, the user is directed to their profile page where the user profile can be seen on the page.
 
  ![pic](testing/registration_successful.JPG)
 
@@ -307,7 +295,7 @@ The new destination appears both: <br/>
 
 - in _Our travels_ page, without possibility to edit/delete destination
 
-- in _My Profile_ page with the possibility to edit destination or to simply remove it from the database.
+- in _My Profile_ page with the possibility to edit the destination or to simply remove it from the database.
 
  ![pic](testing/added_destination_to_the_profile.png)
 
@@ -319,7 +307,7 @@ The new destination appears both: <br/>
 The username of the user who added the destination is added at the end of the card.
 ![pic](testing/created_by.JPG)
 
-After deleting the destination, we can see it dissappears from our profile and the flash message informs us about how destination was deleted.
+After deleting the destination, we can see it disappears from our profile and the flash message informs us that the destination was deleted.
 
 ![pic](testing/destination_deleted_from_my_profile.JPG)
 ![pic](testing/destination_successfully_deleted.JPG) <br/><br/>
@@ -327,12 +315,12 @@ After deleting the destination, we can see it dissappears from our profile and t
 
 #### Our Travels home page
 
-_Our Travels_ home page is the central page of the project. All the destinations user ever added will appear on this page. There's no possibility to edit or delete anyone's destination and you can edit/delete yours just from _My Profile_ page. 
+_Our Travels_ home page is the central page of the project. All the destinations created by users will appear on this page. There's no possibility to edit or delete anyone's destination and you can edit/delete yours just from _My Profile_ page. 
 
-At the top of the page, just below navbar, we can see search section.
+At the top of the page, just below navbar, we can see the search section.
  ![pic](testing/search_section.JPG)
 
-Below it, there's a flexbox of cards among which you can see **Cork, Ireland** destination from the previous example added to the main page.
+Below it, there's a flexbox of cards among which you can see the **Cork, Ireland** destination from the previous example added to the main page.
  ![pic](testing/added_destination_list.png) <br/><br/>
 
 
@@ -347,8 +335,8 @@ Below you can see the the example of all the destinations with the country name 
 
 ### The website validation
 
-I used W3C CSS Validation Service and W3C Markup Validation Service to check the validity of the website code. All the pages, as well as the CSS page, passed validation tests.
-I checked the validation of each page by clicking on the right button and choosing _"View page source"_. I copied the code directly into validation service page. 
+I used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) and [W3C Markup Validation Service](https://validator.w3.org/) to check the validity of the website code. All the pages, as well as the CSS page, passed validation tests.
+I checked the validation of each page by clicking on the right button and choosing _"View page source"_. I copied the code directly into the validation service page. 
 
  ![pic](wireframes/validation_passed.JPG) <br/><br/>
  ![pic](wireframes/validation_css_passed.JPG) <br/><br/>
@@ -456,8 +444,18 @@ MONGO_DBNAME | `YOURDATABASENAME`
 * Click Open app in the right corner of your Heroku account
 * Click on the live link available in the address bar
 
+## Content 
+
+I made Terms and Conditions template using  [LawDepot page](https://www.lawdepot.com/contracts/website-terms-and-conditions/?loc=IE&pid=googleppc-118180551342-514404739913_sl-ggkey_terms%20and%20conditions&gclid=Cj0KCQjws-OEBhCkARIsAPhOkIY_gkn2J6fITunWiaqiBjtvVWIPjkE1hSI2SzsDM8Vp41ZYxrSor6QaAmK9EALw_wcB&webuser_data_id=125207795) which content I changed a bit.
+
+
+
 ## Media
+
+I made the logo image by using [Canva page](https://www.canva.com/) - a graphic design platform, used to create social media graphics, presentations, posters, documents and other visual content.
+
 The site requires from users to copy the url link of the destinations they visited. I don't own any copyrights. The URLs of these images can be various and taken anywhere.
+
 
 ## Acknowledgements
 I acknowledge my mentor Gerard McBride for the guidance on this project.
