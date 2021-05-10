@@ -77,7 +77,7 @@ and how my project is the best way to help them achieve these things.
 - to write interactive JavaScript code so it can help with more intuitive UX (e.g. navbar on mobile devices)
 - generally, to make an interesting and usefull backend web page that can help travellers to describe their experience and read others' in order to get more information
 
-### The business goal of this website is:
+#### The business goal of this website is:
 
 - to be part of a tourist agency's website that could draw peoples' attention to travelling and participating with the travel's community
 
