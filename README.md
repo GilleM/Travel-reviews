@@ -201,6 +201,7 @@ The patterns used for this project are taken from [Hero Patterns](https://www.he
 ![pic](wireframes/bg_photo_2.JPG)
 
 + color: #110916e8;
++ pattern: Topography
 
 ![pic](wireframes/bg_photo_3.JPG)
 
@@ -266,7 +267,7 @@ This project has two main collections in the database: destinations and users. T
 ## Testing
 ***
 
-### Making a shared destination reviews:
+### Making a shared destination reviews
 
 In this app user can create reviews of their favorite destinations that they had visited and share it with others. They can edit and delete their reviews and read others people reviews. Like this, by reading other people's experience, users can get more infos about the destinations they would like to go. 
 
@@ -342,6 +343,15 @@ Below you can see the the example of all the destinations with the country name 
 
  ![pic](testing/search_by_country.png) <br/><br/>
 
+
+
+### The website validation
+
+I used W3C CSS Validation Service and W3C Markup Validation Service to check the validity of the website code. All the pages, as well as the CSS page, passed validation tests.
+I checked the validation of each page by clicking on the right button and choosing _"View page source"_. I copied the code directly into validation service page. 
+
+ ![pic](wireframes/validation_passed.JPG) <br/><br/>
+ ![pic](wireframes/validation_css_passed.JPG) <br/><br/>
 
 
 ## Deployment
@@ -445,3 +455,13 @@ MONGO_DBNAME | `YOURDATABASENAME`
 
 * Click Open app in the right corner of your Heroku account
 * Click on the live link available in the address bar
+
+## Media
+The site requires from users to copy the url link of the destinations they visited. I don't own any copyrights. The URLs of these images can be various and taken anywhere.
+
+## Acknowledgements
+I acknowledge my mentor Gerard McBride for the guidance on this project.
+
+## Disclaimer
+Please contact me if you have any issue regarding copyright content. This project is only for educational purposes. <br/>
+email: matea.leka@gmail.com
