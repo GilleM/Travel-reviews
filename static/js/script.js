@@ -8,11 +8,9 @@ $(document).ready(function() {
     function validateMaterializeSelect() {
         let classValid = {
             "border-bottom": "1px solid #4caf50",
-            "color": red
         };
         let classInvalid = {
             "border-bottom": "1px solid #3c3c3c",
-            "color": red
         };
         if ($("select.validate").prop("required")) {
             $("select.validate").css({
