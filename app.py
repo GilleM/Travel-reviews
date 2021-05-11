@@ -20,24 +20,30 @@ mongo = PyMongo(app)
 
 @app.route("/")
 
-# GET DESTINATION
 @app.route("/get_destination")
 def get_destination():
+    """
+        Render home page with available destinations from db
+    """
     destinations = mongo.db.destinations.find()
     return render_template("destinations.html", destinations=destinations)
 
 
-
-# SEARCH
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    """
+        Search destinations by the city and country name
+    """
     query = request.form.get("query")
     destinations = mongo.db.destinations.find({"$text": {"$search": query}})
     return render_template("destinations.html", destinations=destinations)
 
-# REGISTER
+
 @app.route("/sign_up", methods=["GET", "POST"])
 def sign_up():
+    """
+        Sign up function
+    """
     if request.method == "POST":
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
@@ -59,9 +65,12 @@ def sign_up():
   
     return render_template("sign_up.html")
 
-# LOGIN
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    """
+        Log In function
+    """
     if request.method == "POST":
         # check if username exists in db
         existing_user = mongo.db.users.find_one(
@@ -86,9 +95,12 @@ def login():
 
     return render_template("login.html")
 
-# PROFILE
+
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    """
+        render user profile from db
+    """
     destinations = mongo.db.destinations.find()
 
     # grab the session user's username from db
@@ -100,17 +112,23 @@ def profile(username):
 
     return redirect(url_for("login"))
 
-# LOGOUT
+
 @app.route("/logout")
 def logout():
+    """
+        Log Out function
+    """
     # remove user from session cookie
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
 
-# ADD DESTINATION
 @app.route("/add_destination", methods=["GET", "POST"])
 def add_destination():
+    """
+        add destination collection function. user can add destination to db.
+        user needs to log in first.
+    """
     if request.method == "POST":
         place = {
             "city": request.form.get("city"),
@@ -131,9 +149,11 @@ def add_destination():
     return render_template("add_destination.html")
 
 
-# EDIT DESTINATION
 @app.route("/edit_destination/<place_id>", methods=["GET", "POST"])
 def edit_destination(place_id):
+    """
+        edit destination in the destination collection section
+    """
     if request.method == "POST":
         submit = {
             "city": request.form.get("city"),
@@ -152,17 +172,22 @@ def edit_destination(place_id):
     place = mongo.db.destinations.find_one({"_id": ObjectId(place_id)})
     return render_template("edit_destination.html", place=place)
 
-# DELETE DESTINATION
+
 @app.route("/delete_destination/<place_id>")
 def delete_destination(place_id):
+    """
+        delete function
+    """
     mongo.db.destinations.remove({"_id": ObjectId(place_id)})
     flash("Destination Successfully Deleted")
     return redirect(url_for("get_destination"))
 
-# TERMS AND CONDITIONS
+
 @app.route('/terms_and_conditions')
 def terms_and_conditions():
-
+    """
+        Render term and condition section
+    """
     return render_template("terms_and_conditions.html")
 
 if __name__ == "__main__":
