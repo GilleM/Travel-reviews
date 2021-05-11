@@ -17,6 +17,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+# part of the code of user registration taken from the Code Institute
 
 @app.route("/")
 
