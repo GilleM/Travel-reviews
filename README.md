@@ -10,7 +10,7 @@ Welcome to my third Code Institute milestone project that you can check out by c
 
 <br/>
 
-## Table of Contents - update them when you finish the sections!!!
+## Table of Contents
 ***
 
 1. [Project Description](#project-description)
@@ -458,7 +458,7 @@ The site requires from users to copy the url link of the destinations they visit
 
 
 ## Acknowledgements
-I acknowledge my mentor Gerard McBride for the guidance on this project.
+I acknowledge my mentor Gerard McBride for the guidance on this project. I also want to take the Slack community and my colleagues who helped me with their advice.
 
 ## Disclaimer
 Please contact me if you have any issue regarding copyright content. This project is only for educational purposes. <br/>
